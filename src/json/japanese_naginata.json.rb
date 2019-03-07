@@ -351,7 +351,7 @@ def main
           two_keys('z','j','ぜ'),
           two_keys('x','j','び'),
           two_keys('c','j','ば'),
-          two_keys('v','j','ぁ'),
+          two_keys('v','j','ご'),
           two_keys('b','j','ぞ'),
 
           # 右手半濁音
