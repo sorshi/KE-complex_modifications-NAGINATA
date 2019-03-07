@@ -562,6 +562,8 @@ def main
           normal_key(PERIOD, 'ら'),
           normal_key(SLASH, 'れ'),
 
+          normal_key_always('international4','仮'),#PC用JISキーボードつないだときの定義 (変換)& USモードでも効く定義
+          normal_key('international5','英'),#PC用JISキーボードつないだときの定義 (無変換)
         ],
       },
     ]
@@ -598,6 +600,20 @@ def normal_key(key, char)
     },
     'to' => ROMAN_MAP[char],
     'conditions' => CONDITIONS,
+  }
+end
+
+def normal_key_always(key, char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => key,
+        }
+      ],
+    },
+    'to' => ROMAN_MAP[char],
   }
 end
 

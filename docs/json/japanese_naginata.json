@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v10)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v10) Build 1551946723 ",
+      "description": "Japanese NAGINATA STYLE (v10) Build 1551948048 ",
       "manipulators": [
         {
           "type": "basic",
@@ -10506,6 +10506,59 @@
             },
             {
               "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "international4"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "lang1",
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "international5"
+          },
+          "to": [
+            {
+              "key_code": "lang2",
               "repeat": false
             }
           ],
