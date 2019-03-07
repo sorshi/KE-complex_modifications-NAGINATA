@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v10)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v10) Build 1551925345 ",
+      "description": "Japanese NAGINATA STYLE (v10) Build 1551946723 ",
       "manipulators": [
         {
           "type": "basic",
@@ -15,6 +15,11 @@
                 "name": "shifted",
                 "value": 1
               }
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar"
             }
           ],
           "to_after_key_up": [

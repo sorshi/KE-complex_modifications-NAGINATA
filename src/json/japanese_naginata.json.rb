@@ -579,6 +579,9 @@ def shiftkeydef()
       'set_variable'=>
         {'name' => 'shifted','value' => 1}
     ],
+    'to_if_alone' => [
+      'key_code' => SPACEBAR
+    ],
     'to_after_key_up' => [
       'set_variable'=>
         {'name' => 'shifted','value' => 0}
