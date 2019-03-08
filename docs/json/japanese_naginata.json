@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v10)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v10) Build 1551948048 ",
+      "description": "Japanese NAGINATA STYLE (v10) Build 1552031747 ",
       "manipulators": [
         {
           "type": "basic",
@@ -4296,7 +4296,7 @@
               "repeat": false
             },
             {
-              "key_code": "u",
+              "key_code": "o",
               "repeat": false
             }
           ],
@@ -5128,7 +5128,7 @@
               "repeat": false
             },
             {
-              "key_code": "u",
+              "key_code": "o",
               "repeat": false
             }
           ],
