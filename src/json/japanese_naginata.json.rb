@@ -269,10 +269,10 @@ ROMAN_MAP = {
 def main
   now = Time.now.to_i
   puts JSON.pretty_generate(
-    'title' => 'Japanese NAGINATA STYLE (v10)',
+    'title' => 'Japanese NAGINATA STYLE (v11)',
     'rules' => [
       {
-        'description' => "Japanese NAGINATA STYLE (v10) Build #{now} ",
+        'description' => "Japanese NAGINATA STYLE (v11) Build #{now} ",
         'manipulators' => [
           # 同時打鍵数の多いものから書く
           shiftkeydef(),#連続シフト用定義
