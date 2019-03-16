@@ -258,6 +258,7 @@ ROMAN_MAP = {
   '改' => [key(ENTER)],
   '英' => [key(ENG)],
   '仮' => [key(JPN)],
+  '。改' => [key(PERIOD),key(ENTER)],
 
 
   #  '?' => [key_with_shift('slash')],
@@ -449,19 +450,19 @@ def main
           # シフト(スペースキー)
 
           #shift_key('q', ''),
-          shift_key('w', 'ね'),
+          shift_key('s', 'ね'),
           shift_key('e', 'り'),
-          shift_key('r', 'む'),
+          shift_key(COMMA, 'む'),
           #shift_key('t', ''),
 
           #shift_key('y', ''),
           shift_key('u', 'さ'),
           shift_key('i', 'よ'),
-          shift_key('o', 'え'),
-          shift_key('p', 'め'),
+          shift_key('p', 'え'),
+          shift_key('r', 'め'),
 
           #shift_key('a', ''),
-          shift_key('s', 'み'),
+          shift_key('w', 'み'),
           shift_key('d', 'に'),
           shift_key('f', 'ま'),
           shift_key('g', 'ち'),
@@ -472,15 +473,15 @@ def main
           shift_key('l', 'つ'),
           shift_key(SEMICOLON, 'や'),
 
-          shift_key('z', 'せ'),
+          shift_key('a', 'せ'),
           #shift_key('x', 'ひ'),
           shift_key('c', 'を'),
           shift_key('v', '、'),
           shift_key('b', 'ぬ'),
 
           shift_key('n', 'お'),
-          shift_key('m', '。'),
-          shift_key(COMMA, 'ゆ'),
+          shift_key('m', '。改'),
+          shift_key('o', 'ゆ'),
           shift_key(PERIOD, 'ふ'),
           #shift_key('/', ''),
 
@@ -527,7 +528,7 @@ def main
           # シフトなし(単打)
 
           normal_key('q', 'ヴ'),
-          normal_key('w', 'き'),
+          normal_key('s', 'き'),
           normal_key('e', 'て'),
           normal_key('r', 'し'),
           normal_key('t', '←'),
@@ -538,8 +539,8 @@ def main
           normal_key('o', 'す'),
           normal_key('p', 'へ'),
 
-          normal_key('a', 'ほ'),
-          normal_key('s', 'け'),
+          normal_key('z', 'ほ'),
+          normal_key('c', 'け'),
           normal_key('d', 'と'),
           normal_key('f', 'か'),
           normal_key('g', 'っ'),
@@ -550,9 +551,9 @@ def main
           normal_key('l', 'う'),
           normal_key(SEMICOLON, 'ー'),
 
-          normal_key('z', 'ろ'),
+          normal_key('a', 'ろ'),
           normal_key('x', 'ひ'),
-          normal_key('c', 'は'),
+          normal_key('w', 'は'),
           normal_key('v', 'こ'),
           normal_key('b', 'そ'),
 

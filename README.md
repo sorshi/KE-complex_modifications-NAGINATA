@@ -1,6 +1,6 @@
 # これはなに
 
-Macにキーボード配列の[薙刀式](http://oookaworks.seesaa.net/article/456099128.html)を移植したものです。オリジナルはWindows用です。
+Macにキーボード配列の[薙刀式](http://oookaworks.seesaa.net/article/456099128.html)を移植したものです。オリジナルはWindows用です。ベースはv11です。
 
 Macでの動作は[Karabiner-Elements](https://pqrs.org/osx/karabiner/)が必要となります。
 

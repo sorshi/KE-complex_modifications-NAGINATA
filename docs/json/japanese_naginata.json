@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v10)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v10) Build 1552031747 ",
+      "description": "Japanese NAGINATA STYLE (v10) Build 1552737284 ",
       "manipulators": [
         {
           "type": "basic",
@@ -6918,7 +6918,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "spacebar"
@@ -7030,7 +7030,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "r"
+                "key_code": "comma"
               },
               {
                 "key_code": "spacebar"
@@ -7198,7 +7198,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "p"
               },
               {
                 "key_code": "spacebar"
@@ -7250,7 +7250,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "p"
+                "key_code": "r"
               },
               {
                 "key_code": "spacebar"
@@ -7306,7 +7306,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "s"
+                "key_code": "w"
               },
               {
                 "key_code": "spacebar"
@@ -7810,7 +7810,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "z"
+                "key_code": "a"
               },
               {
                 "key_code": "spacebar"
@@ -8093,6 +8093,10 @@
             {
               "key_code": "period",
               "repeat": false
+            },
+            {
+              "key_code": "return_or_enter",
+              "repeat": false
             }
           ],
           "conditions": [
@@ -8134,7 +8138,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "comma"
+                "key_code": "o"
               },
               {
                 "key_code": "spacebar"
@@ -9373,7 +9377,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "w"
+            "key_code": "s"
           },
           "to": [
             {
@@ -9730,7 +9734,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "a"
+            "key_code": "z"
           },
           "to": [
             {
@@ -9771,7 +9775,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "s"
+            "key_code": "c"
           },
           "to": [
             {
@@ -10128,7 +10132,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "z"
+            "key_code": "a"
           },
           "to": [
             {
@@ -10210,7 +10214,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "c"
+            "key_code": "w"
           },
           "to": [
             {
