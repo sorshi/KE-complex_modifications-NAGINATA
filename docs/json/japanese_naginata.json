@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Build 1553182630 ",
+      "description": "Japanese NAGINATA STYLE (v11) Build 1553183596 ",
       "manipulators": [
         {
           "type": "basic",
@@ -3652,7 +3652,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "s"
+                "key_code": "w"
               },
               {
                 "key_code": "semicolon"
@@ -4016,7 +4016,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "s"
+                "key_code": "w"
               },
               {
                 "key_code": "o"
@@ -8141,7 +8141,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "w"
+            "key_code": "s"
           },
           "to": [
             {
@@ -8233,7 +8233,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "r"
+            "key_code": "comma"
           },
           "to": [
             {
@@ -8371,7 +8371,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "o"
+            "key_code": "p"
           },
           "to": [
             {
@@ -8413,7 +8413,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "p"
+            "key_code": "r"
           },
           "to": [
             {
@@ -8459,7 +8459,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "s"
+            "key_code": "w"
           },
           "to": [
             {
@@ -8873,7 +8873,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "z"
+            "key_code": "a"
           },
           "to": [
             {
@@ -9100,6 +9100,10 @@
           "to": [
             {
               "key_code": "period",
+              "repeat": false
+            },
+            {
+              "key_code": "return_or_enter",
               "repeat": false
             }
           ],
