@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Build 1552738658 ",
+      "description": "Japanese NAGINATA STYLE (v11) Build 1553180849 ",
       "manipulators": [
         {
           "type": "basic",
@@ -591,7 +591,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "j"
@@ -811,7 +811,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "j"
@@ -1031,7 +1031,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "j"
@@ -1416,7 +1416,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "r"
+                "key_code": "s"
               },
               {
                 "key_code": "m"
@@ -1471,7 +1471,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "m"
@@ -1526,7 +1526,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "m"
@@ -2687,7 +2687,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "w"
+                "key_code": "s"
               },
               {
                 "key_code": "j"
@@ -2879,7 +2879,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "s"
+                "key_code": "c"
               },
               {
                 "key_code": "j"
@@ -3407,7 +3407,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "a"
+                "key_code": "z"
               },
               {
                 "key_code": "m"
@@ -3503,7 +3503,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "c"
+                "key_code": "w"
               },
               {
                 "key_code": "m"

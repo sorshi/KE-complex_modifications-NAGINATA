@@ -295,15 +295,15 @@ def main
           three_keys(SPACEBAR,'v','h','ゎ'),
           # シフト「りゅ」のみ「てゅ」に定義
           three_keys(SPACEBAR, 'e',COMMA,'てゅ'),
-          three_keys('w','j',SEMICOLON,'ぎゃ'),
+          three_keys('s','j',SEMICOLON,'ぎゃ'),
           three_keys('r','j',SEMICOLON,'じゃ'),
           three_keys('g','j',SEMICOLON,'ぢゃ'),
           three_keys('x','j',SEMICOLON,'びゃ'),
-          three_keys('w','j',COMMA,'ぎゅ'),
+          three_keys('s','j',COMMA,'ぎゅ'),
           three_keys('r','j',COMMA,'じゅ'),
           three_keys('g','j',COMMA,'ぢゅ'),
           three_keys('x','j',COMMA,'びゅ'),
-          three_keys('w','j','i','ぎょ'),
+          three_keys('s','j','i','ぎょ'),
           three_keys('r','j','i','じょ'),
           three_keys('g','j','i','ぢょ'),
           three_keys('x','j','i','びょ'),
@@ -311,9 +311,9 @@ def main
           three_keys('r','m','i','じょ'),
           three_keys('r','m',SEMICOLON,'じゃ'),
           three_keys('r','m',COMMA,'じゅ'),
-          three_keys('r','m','i','ぎょ'),
-          three_keys('w','m',SEMICOLON,'ぎゃ'),
-          three_keys('w','m',COMMA,'ぎゅ'),
+          three_keys('s','m','i','ぎょ'),
+          three_keys('s','m',SEMICOLON,'ぎゃ'),
+          three_keys('s','m',COMMA,'ぎゅ'),
           three_keys('g','m','i','ぢょ'),
           three_keys('g','m',SEMICOLON,'ぢゃ'),
           three_keys('g','m',COMMA,'ぢゅ'),
@@ -341,11 +341,11 @@ def main
           two_keys(PERIOD,'f','ぶ'),
 
           # 左手濁点
-          two_keys('w','j','ぎ'),
+          two_keys('s','j','ぎ'),
           two_keys('e','j','で'),
           two_keys('r','j','じ'),
           two_keys('a','j','ぼ'),
-          two_keys('s','j','げ'),
+          two_keys('c','j','げ'),
           two_keys('d','j','ど'),
           two_keys('f','j','が'),
           two_keys('g','j','ぢ'),
@@ -360,9 +360,9 @@ def main
           two_keys(PERIOD,'v','ぷ'),
 
           # 左手半濁音
-          two_keys('a','m','ぽ'),
+          two_keys('z','m','ぽ'),
           two_keys('x','m','ぴ'),
-          two_keys('c','m','ぱ'),
+          two_keys('w','m','ぱ'),
 
           # 拗音シフト やゆよと同時押しで、ゃゅょが付く
 
