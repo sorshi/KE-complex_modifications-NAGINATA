@@ -81,6 +81,13 @@ def key(key_code)
   }
 end
 
+def key_with_repeat(key_code)
+  {
+    'key_code' => key_code,
+    'repeat' => true,
+  }
+end
+
 def key_with_shift(key_code)
   {
     'key_code' => key_code,
@@ -255,7 +262,7 @@ ROMAN_MAP = {
   'ー' => [key(HYPHEN)],
   '、' => [key(COMMA)],
   '。' => [key(PERIOD)],
-  '削' => [key(BACK_SPACE)],
+  '削' => [key_with_repeat(BACK_SPACE)],
   '→' => [key(RIGHT_ARROW)],
   '←' => [key(LEFT_ARROW)],
   '改' => [key(ENTER)],
@@ -290,7 +297,7 @@ def main
           three_keys(SPACEBAR,'v','j','ぁ'),
           three_keys(SPACEBAR,'v','k','ぃ'),
           three_keys(SPACEBAR,'v','l','ぅ'),
-          three_keys(SPACEBAR,'v','o','ぇ'),
+          three_keys(SPACEBAR,'v','p','ぇ'),
           three_keys(SPACEBAR,'v','n','ぉ'),
           three_keys(SPACEBAR,'v',SEMICOLON,'ゃ'),
           three_keys(SPACEBAR,'v','o','ゅ'),
