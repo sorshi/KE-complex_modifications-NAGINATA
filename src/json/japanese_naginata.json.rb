@@ -338,6 +338,11 @@ def main
           three_keys('g','o','j','ぢぇ'),
           three_keys('e','j','k','でぃ'),
           three_keys('d','j','l','どぅ'),
+          #ツァ行は「う」「つ」が同じキーにあるためシフトを押しながら
+          three_keys(SPACEBAR, 'l','j','つぁ'),
+          three_keys(SPACEBAR, 'l','k','つぃ'),
+          three_keys(SPACEBAR, 'l','p','つぇ'),
+          three_keys(SPACEBAR, 'l','n','つぉ'),
           # ------------------------------
           # 2同時打鍵
           # 右手濁点
@@ -431,14 +436,10 @@ def main
           two_keys('q','o','ヴゅ'),
 
           # 右手領域の同時押し外来音
-          two_keys('l','p','うぇ'),
+          two_keys('l','j','うぁ'),
           two_keys('l','k','うぃ'),
+          two_keys('l','p','うぇ'),
           two_keys('l','n','うぉ'),
-
-          two_keys('l','j','つぁ'),
-          two_keys('l','k','つぃ'),
-          two_keys('l','o','つぇ'),
-          two_keys('l','n','つぉ'),
 
           two_keys(PERIOD,'j','ふぁ'),
           two_keys(PERIOD,'k','ふぃ'),
