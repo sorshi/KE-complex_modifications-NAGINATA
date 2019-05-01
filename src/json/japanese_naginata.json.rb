@@ -334,7 +334,7 @@ def main
           three_keys('x','m',SEMICOLON,'ぴゃ'),
           three_keys('x','m','o','ぴゅ'),
           three_keys('e','j','o','でゅ'),
-          three_keys('r','o','j','じぇ'),
+          three_keys('r','j','p','じぇ'),
           three_keys('g','o','j','ぢぇ'),
           three_keys('e','j','k','でぃ'),
           three_keys('d','j','l','どぅ'),
@@ -446,8 +446,8 @@ def main
           two_keys(PERIOD,'n','ふぉ'),
           two_keys(PERIOD,'o','ふゅ'),
 
-          two_keys('r','o','しぇ'),
-          two_keys('g','o','ちぇ'),
+          two_keys('r','p','しぇ'),
+          two_keys('g','p','ちぇ'),
 
           #特殊操作
           two_keys('v','m','改'),
