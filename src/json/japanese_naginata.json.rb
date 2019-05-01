@@ -424,7 +424,7 @@ def main
           # 外来音
           two_keys('e','k','てぃ'),
           two_keys('d','l','とぅ'),
-          two_keys('q','o','ヴぇ'),
+          two_keys('q','p','ヴぇ'),
           two_keys('q','j','ヴぁ'),
           two_keys('q','k','ヴぃ'),
           two_keys('q','n','ヴぉ'),
