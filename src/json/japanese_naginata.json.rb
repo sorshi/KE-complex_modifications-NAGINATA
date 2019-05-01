@@ -335,7 +335,7 @@ def main
           three_keys('x','m','o','ぴゅ'),
           three_keys('e','j','o','でゅ'),
           three_keys('r','j','p','じぇ'),
-          three_keys('g','o','j','ぢぇ'),
+          three_keys('g','j','p','ぢぇ'),
           three_keys('e','j','k','でぃ'),
           three_keys('d','j','l','どぅ'),
           #ツァ行は「う」「つ」が同じキーにあるためシフトを押しながら
