@@ -431,7 +431,7 @@ def main
           two_keys('q','o','ヴゅ'),
 
           # 右手領域の同時押し外来音
-          two_keys('l','o','うぇ'),
+          two_keys('l','p','うぇ'),
           two_keys('l','k','うぃ'),
           two_keys('l','n','うぉ'),
 
