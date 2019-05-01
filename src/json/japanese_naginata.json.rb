@@ -442,7 +442,7 @@ def main
 
           two_keys(PERIOD,'j','ふぁ'),
           two_keys(PERIOD,'k','ふぃ'),
-          two_keys(PERIOD,'o','ふぇ'),
+          two_keys(PERIOD,'p','ふぇ'),
           two_keys(PERIOD,'n','ふぉ'),
           two_keys(PERIOD,'o','ふゅ'),
 
