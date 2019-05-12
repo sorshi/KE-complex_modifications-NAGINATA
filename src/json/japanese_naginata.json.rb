@@ -406,9 +406,6 @@ def main
           two_keys('w','i','みょ'),
           two_keys('w',SEMICOLON,'みゃ'),
           two_keys('w','o','みゅ'),
-          two_keys('e','i','りょ'),
-          two_keys('e','o','りゅ'),
-          two_keys('e','i','りょ'),
 
           two_keys('r','i','しょ'),
           two_keys('r',SEMICOLON,'しゃ'),
