@@ -23,7 +23,10 @@ HYPHEN = 'hyphen'.freeze
 COMMA = 'comma'.freeze
 PERIOD = 'period'.freeze
 SEMICOLON = 'semicolon'.freeze
+COLON = 'quote'.freeze
 SLASH = 'slash'.freeze
+HOME = 'home'.freeze
+ENDKEY = 'end'.freeze
 JPN = 'lang1'.freeze
 ENG = 'lang2'.freeze
 ########################################
@@ -93,6 +96,27 @@ def key_with_shift(key_code)
     'key_code' => key_code,
     'modifiers' => [
       'left_shift',
+    ],
+    'repeat' => false,
+  }
+end
+
+def key_with_option(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_alt',
+    ],
+    'repeat' => false,
+  }
+end
+
+def key_with_option_shift(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_shift',
+      'left_alt'
     ],
     'repeat' => false,
   }
@@ -269,11 +293,29 @@ ROMAN_MAP = {
   '英' => [key(ENG)],
   '仮' => [key(JPN)],
   '。改' => [key(PERIOD),key(ENTER)],
+  #編集モード1定義
 
+  #編集モード2定義
+  '／改' => [key(SLASH),key(ENTER)],
+  '：改' => [key(COLON),key(ENTER)],
+  '・改' => [key_with_option(SLASH),key(ENTER)],
+  '○改' => [key('s'), key('i'),key('r'), key('o'),key('m'), key('a'),key('r'), key('u')],
+  '行頭空白改' => [key(HOME),key(ENTER),key(SPACEBAR),key(ENDKEY)],
 
-  #  '?' => [key_with_shift('slash')],
+  '【改' => [key_with_option('8'),key(ENTER)],
+  '〈改' => [key_with_option_shift('3'),key(ENTER)],
+  '！改' => [key_with_shift('1'),key(ENTER)],
+  '？改' => [key_with_shift(SLASH),key(ENTER)],
+  '行頭空白三改' => [key(HOME),key(ENTER),key(SPACEBAR),key(SPACEBAR),key(SPACEBAR),key(ENDKEY)],
+
+  '】改' => [key_with_option('9'),key(ENTER)],
+  '〉改' => [key_with_option_shift('4'),key(ENTER)],
+  '……改' => [key_with_option(SEMICOLON),key_with_option(SEMICOLON),key(ENTER)],
+  '──改' => [key_with_option_shift(HYPHEN),key_with_option_shift(HYPHEN),key(ENTER)],
+  '三空白' => [key(SPACEBAR),key(SPACEBAR),key(SPACEBAR)],
+
+  
 }.freeze
-
 ########################################
 
 def main
@@ -286,12 +328,29 @@ def main
         'manipulators' => [
           # 同時打鍵数の多いものから書く
           shiftkeydef(),#連続シフト用定義
-
           # ------------------------------
-          # 4同時打鍵
-          # W.I.P
 
-          # ------------------------------
+          #編集モード1定義
+          
+          #編集モード2定義
+          editmode_two_left('q','／改'),
+          editmode_two_left('w','：改'),
+          editmode_two_left('e','・改'),
+          editmode_two_left('r','○改'),
+          editmode_two_left('t','行頭空白改'),
+
+          editmode_two_left('a','【改'),
+          editmode_two_left('s','〈改'),
+          editmode_two_left('d','！改'),
+          editmode_two_left('f','？改'),
+          editmode_two_left('g','行頭空白三改'),
+
+          editmode_two_left('z','】改'),
+          editmode_two_left('x','〉改'),
+          editmode_two_left('c','……改'),
+          editmode_two_left('v','──改'),
+          editmode_two_left('b','三空白'),
+
           # 3同時打鍵
           # 小書き： シフト半濁音同時押し
           three_keys(SPACEBAR,'v','j','ぁ'),
@@ -562,15 +621,16 @@ def main
           normal_key('w', 'は'),
           normal_key('v', 'こ'),
           normal_key('b', 'そ'),
-
           normal_key('n', 'た'),
           normal_key('m', 'な'),
           normal_key(COMMA, 'ん'),
           normal_key(PERIOD, 'ら'),
           normal_key(SLASH, 'れ'),
-
+          #PC用キーボード定義
           normal_key_always('international4','仮'),#PC用JISキーボードつないだときの定義 (変換)& USモードでも効く定義
           normal_key('international5','英'),#PC用JISキーボードつないだときの定義 (無変換)
+
+
         ],
       },
     ]
@@ -735,6 +795,27 @@ def four_keys(key,key2,key3,key4, char)
         },
         {
           'key_code' => key4,
+        },
+      ],
+    },
+    'to' => ROMAN_MAP[char],
+    'conditions' => CONDITIONS,
+  }
+end
+
+def editmode_two_left(key,char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => 'm',
+        },
+        {
+          'key_code' => COMMA,
+        },
+        {
+          'key_code' => key,
         },
       ],
     },
