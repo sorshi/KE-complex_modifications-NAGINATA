@@ -17,6 +17,8 @@ require_relative '../lib/karabiner.rb'
 SPACEBAR = 'spacebar'.freeze
 LEFT_ARROW = 'left_arrow'.freeze
 RIGHT_ARROW = 'right_arrow'.freeze
+UP_ARROW = 'up_arrow'.freeze
+DOWN_ARROW = 'down_arrow'.freeze
 BACK_SPACE = 'delete_or_backspace'.freeze
 ENTER = 'return_or_enter'.freeze
 HYPHEN = 'hyphen'.freeze
@@ -27,6 +29,10 @@ COLON = 'quote'.freeze
 SLASH = 'slash'.freeze
 HOME = 'home'.freeze
 ENDKEY = 'end'.freeze
+LEFT_CORNER_BRACKET = 'close_bracket'.freeze #このへんJISで認識されてないキーボードだと変わる
+RIGHT_CORNER_BRACKET = 'backslash'.freeze #このへんJISで認識されてないキーボードだと変わる
+YEN = 'international3'.freeze
+
 JPN = 'lang1'.freeze
 ENG = 'lang2'.freeze
 ########################################
@@ -314,7 +320,23 @@ ROMAN_MAP = {
   '──改' => [key_with_option_shift(HYPHEN),key_with_option_shift(HYPHEN),key(ENTER)],
   '三空白' => [key(SPACEBAR),key(SPACEBAR),key(SPACEBAR)],
 
-  
+  '」改改空' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(SPACEBAR)],
+  '行頭削除' => [key_with_shift(HOME),key(BACK_SPACE)], #カーソル位置から行頭まで削除
+  '確定復行' => [key(JPN),key(JPN)],#再変換と同一
+  '縦棒改' => [key_with_shift(YEN),key(ENTER)],
+  'ルビ' => [key_with_shift(YEN),key(ENTER),key(ENDKEY),key_with_option(RIGHT_CORNER_BRACKET),key_with_option_shift(RIGHT_CORNER_BRACKET),key(ENTER),key(UP_ARROW)],
+
+  '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
+  '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
+  '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
+  '《改' => [key_with_option(LEFT_CORNER_BRACKET),key(ENTER)],
+  '（改' => [key_with_shift('8'),key(ENTER)],
+  '」改改' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER)],
+  '」改' => [key(RIGHT_CORNER_BRACKET),key(ENTER)],
+  '』改' => [key_with_shift(RIGHT_CORNER_BRACKET),key(ENTER)],
+  '》改' => [key_with_option_shift(LEFT_CORNER_BRACKET),key(ENTER)],
+  '）改' => [key_with_shift('9'),key(ENTER)],
+
 }.freeze
 ########################################
 
@@ -350,6 +372,24 @@ def main
           editmode_two_left('c','……改'),
           editmode_two_left('v','──改'),
           editmode_two_left('b','三空白'),
+
+          editmode_two_right('y','」改改空'),
+          editmode_two_right('u','行頭削除'),
+          editmode_two_right('i','確定復行'),#確定Undo,旧称ことえりにこの機能見当たらなかったんで再変換とおんなじ
+          editmode_two_right('o','縦棒改'),
+          editmode_two_right('p','ルビ'),
+
+          editmode_two_right('h','」改「'),
+          editmode_two_right('j','「改'),
+          editmode_two_right('k','『改'),
+          editmode_two_right('l','《改'),
+          editmode_two_right(SEMICOLON,'（改'),
+
+          editmode_two_right('n','」改改'),
+          editmode_two_right('m','」改'),
+          editmode_two_right(COMMA,'』改'),
+          editmode_two_right(PERIOD,'》改'),
+          editmode_two_right(SLASH,'）改'),
 
           # 3同時打鍵
           # 小書き： シフト半濁音同時押し
@@ -813,6 +853,27 @@ def editmode_two_left(key,char)
         },
         {
           'key_code' => COMMA,
+        },
+        {
+          'key_code' => key,
+        },
+      ],
+    },
+    'to' => ROMAN_MAP[char],
+    'conditions' => CONDITIONS,
+  }
+end
+
+def editmode_two_right(key,char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => 'v',
+        },
+        {
+          'key_code' => 'c',
         },
         {
           'key_code' => key,
