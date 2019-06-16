@@ -386,7 +386,7 @@ ROMAN_MAP = {
 
   '行頭' => [key_with_control('a')],
   '行末削除' => [key_with_control('k')], #カーソル位置から行末まで削除
-  '再変換' => [key_with_option_shift('r')],
+  '再変換' => [key_with_control_shift('r')],
   '削除' => [key_with_control('d')],
   '入力撤回' => [key(ESC),key(ESC)],
   '確定エンド' => [key(ENTER),key_with_control('e')],
