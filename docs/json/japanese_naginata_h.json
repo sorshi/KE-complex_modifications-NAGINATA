@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1560658016 ",
+      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1560658015 ",
       "manipulators": [
         {
           "type": "basic",
@@ -73,7 +73,7 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
+              "key_code": "down_arrow",
               "modifiers": [
                 "left_gui"
               ],
@@ -123,7 +123,7 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
+              "key_code": "up_arrow",
               "modifiers": [
                 "left_gui"
               ],
@@ -180,43 +180,43 @@
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             }
           ],
@@ -465,83 +465,83 @@
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             }
           ],
@@ -795,123 +795,123 @@
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             }
           ],
@@ -1264,7 +1264,7 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             }
           ],
@@ -1311,7 +1311,7 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "modifiers": [
                 "left_shift"
               ],
@@ -1361,23 +1361,23 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             },
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             },
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             },
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             },
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "repeat": false
             }
           ],
@@ -1524,7 +1524,7 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             }
           ],
@@ -1571,7 +1571,7 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "modifiers": [
                 "left_shift"
               ],
@@ -1621,23 +1621,23 @@
           },
           "to": [
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             },
             {
-              "key_code": "down_arrow",
+              "key_code": "right_arrow",
               "repeat": false
             }
           ],
@@ -2667,7 +2667,7 @@
           },
           "to": [
             {
-              "key_code": "up_arrow",
+              "key_code": "left_arrow",
               "modifiers": [
                 "left_shift",
                 "left_gui"
@@ -12683,7 +12683,7 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
+              "key_code": "down_arrow",
               "repeat": false
             }
           ],
@@ -12720,7 +12720,7 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
+              "key_code": "up_arrow",
               "repeat": false
             }
           ],
