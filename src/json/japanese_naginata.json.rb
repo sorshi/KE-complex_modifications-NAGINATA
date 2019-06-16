@@ -1,10 +1,21 @@
 #!/usr/bin/env ruby
-
+#
 # You can generate json by executing the following command on Terminal.
 #
 # $ ruby ./japanese_naginata.json.rb > ../../docs/json/japanese_naginata.json
 #
+# Horizontal Version
+# $ ruby ./japanese_naginata.json.rb h > ../../docs/json/japanese_naginata_h.json
+#
 # This script made based example_japanese_nicola.json.rb.
+#
+#
+#
+# This software based on カナ配列「薙刀式」
+# http://oookaworks.seesaa.net/article/456099128.html
+#
+# This Mac porting version hosted on https://github.com/sorshi/KE-complex_modifications-NAGINATA
+# made by DCC-JPL Japan/Sorshi
 
 require 'json'
 require 'date'
@@ -13,12 +24,26 @@ require_relative '../lib/karabiner.rb'
 
 ########################################
 # キーコード(親指シフトと違ってそのまんまだから意味ないな…)
-
+if ARGV[0] == 'h' then
+  #横書きキーアサイン
+  LEFT_ARROW = 'down_arrow'.freeze
+  RIGHT_ARROW = 'up_arrow'.freeze
+  UP_ARROW = 'left_arrow'.freeze
+  DOWN_ARROW = 'right_arrow'.freeze
+  MODE = 'Horizontal'.freeze
+else
+  #デフォルト(縦書き)キーアサイン
+  LEFT_ARROW = 'left_arrow'.freeze
+  RIGHT_ARROW = 'right_arrow'.freeze
+  UP_ARROW = 'up_arrow'.freeze
+  DOWN_ARROW = 'down_arrow'.freeze
+  MODE = 'Default(Vertical)'.freeze
+end
+ALWAYS_LEFT_ARROW = 'left_arrow'.freeze
+ALWAYS_RIGHT_ARROW = 'right_arrow'.freeze
+ALWAYS_UP_ARROW = 'up_arrow'.freeze
+ALWAYS_DOWN_ARROW = 'down_arrow'.freeze
 SPACEBAR = 'spacebar'.freeze
-LEFT_ARROW = 'left_arrow'.freeze
-RIGHT_ARROW = 'right_arrow'.freeze
-UP_ARROW = 'up_arrow'.freeze
-DOWN_ARROW = 'down_arrow'.freeze
 BACK_SPACE = 'delete_or_backspace'.freeze
 ENTER = 'return_or_enter'.freeze
 HYPHEN = 'hyphen'.freeze
@@ -32,6 +57,9 @@ ENDKEY = 'end'.freeze
 LEFT_CORNER_BRACKET = 'close_bracket'.freeze #このへんJISで認識されてないキーボードだと変わる
 RIGHT_CORNER_BRACKET = 'backslash'.freeze #このへんJISで認識されてないキーボードだと変わる
 YEN = 'international3'.freeze
+PAGEUP = 'page_up'.freeze
+PAGEDOWN = 'page_down'.freeze
+ESC = 'escape'.freeze
 
 JPN = 'lang1'.freeze
 ENG = 'lang2'.freeze
@@ -97,6 +125,27 @@ def key_with_repeat(key_code)
   }
 end
 
+def key_with_control(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_control',
+    ],
+    'repeat' => false,
+  }
+end
+
+def key_with_control_shift(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_control',
+      'left_shift'
+    ],
+    'repeat' => false,
+  }
+end
+
 def key_with_shift(key_code)
   {
     'key_code' => key_code,
@@ -123,6 +172,27 @@ def key_with_option_shift(key_code)
     'modifiers' => [
       'left_shift',
       'left_alt'
+    ],
+    'repeat' => false,
+  }
+end
+
+def key_with_command(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_gui'
+    ],
+    'repeat' => false,
+  }
+end
+
+def key_with_command_shift(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_shift',
+      'left_gui'
     ],
     'repeat' => false,
   }
@@ -300,19 +370,48 @@ ROMAN_MAP = {
   '仮' => [key(JPN)],
   '。改' => [key(PERIOD),key(ENTER)],
   #編集モード1定義
+  '文末' => [key_with_command(LEFT_ARROW)],
+  '文頭' => [key_with_command(RIGHT_ARROW)],
+  '十字目' => [key_with_control('a'),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW)],
+  'リドゥ' => [key_with_command_shift('z')],
+  '保存' => [key_with_command('s')],
+  '頁下' => [key(PAGEDOWN)],
+  '頁上' => [key(PAGEUP)],
+  '二十字目' => [key_with_control('a'),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW)],
+  'アンドゥ' => [key_with_command('z')],
+  'カット' => [key_with_command('x')],
+  'コピー' => [key_with_command('c')],
+  'ペースト' => [key_with_command('v')],
+  '三十字目' => [key_with_control('a'),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW)],
+
+  '行頭' => [key_with_control('a')],
+  '行末削除' => [key_with_control('k')], #カーソル位置から行末まで削除
+    #'再変換' 確定復行と同一と思われるため未定義
+  '削除' => [key_with_control('d')],
+  '入力撤回' => [key(ESC),key(ESC)],
+  '確定エンド' => [key(ENTER),key_with_control('e')],
+  '上矢印' => [key(UP_ARROW)],
+  'シフト上矢印' => [key_with_shift(UP_ARROW)],
+  '五上矢印' => [key(UP_ARROW),key(UP_ARROW),key(UP_ARROW),key(UP_ARROW),key(UP_ARROW)],
+  'カタカナに' => [key_with_control('k')],
+  '行末' => [key_with_control('e')],
+  '下矢印' => [key(DOWN_ARROW)],
+  'シフト下矢印' => [key_with_shift(DOWN_ARROW)],
+  '五下矢印' => [key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW),key(DOWN_ARROW)],
+  'ひらがなに' => [key_with_control('j')],
 
   #編集モード2定義
   '／改' => [key(SLASH),key(ENTER)],
   '：改' => [key(COLON),key(ENTER)],
   '・改' => [key_with_option(SLASH),key(ENTER)],
   '○改' => [key('s'), key('i'),key('r'), key('o'),key('m'), key('a'),key('r'), key('u')],
-  '行頭空白改' => [key(HOME),key(ENTER),key(SPACEBAR),key(ENDKEY)],
+  '行頭空白改' => [key_with_control('a'),key(SPACEBAR),key(ENTER),key_with_control('e')],
 
   '【改' => [key_with_option('8'),key(ENTER)],
   '〈改' => [key_with_option_shift('3'),key(ENTER)],
   '！改' => [key_with_shift('1'),key(ENTER)],
   '？改' => [key_with_shift(SLASH),key(ENTER)],
-  '行頭空白三改' => [key(HOME),key(ENTER),key(SPACEBAR),key(SPACEBAR),key(SPACEBAR),key(ENDKEY)],
+  '行頭空白三改' => [key_with_control('a'),key(SPACEBAR),key(SPACEBAR),key(SPACEBAR),key(ENTER),key_with_control('e')],
 
   '】改' => [key_with_option('9'),key(ENTER)],
   '〉改' => [key_with_option_shift('4'),key(ENTER)],
@@ -321,20 +420,21 @@ ROMAN_MAP = {
   '三空白' => [key(SPACEBAR),key(SPACEBAR),key(SPACEBAR)],
 
   '」改改空' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(SPACEBAR)],
-  '行頭削除' => [key_with_shift(HOME),key(BACK_SPACE)], #カーソル位置から行頭まで削除
+  '行頭削除' => [key_with_command_shift(UP_ARROW),key_with_repeat(BACK_SPACE)], #カーソル位置から行頭まで削除
   '確定復行' => [key(JPN),key(JPN)],#再変換と同一
   '縦棒改' => [key_with_shift(YEN),key(ENTER)],
-  'ルビ' => [key_with_shift(YEN),key(ENTER),key(ENDKEY),key_with_option(RIGHT_CORNER_BRACKET),key_with_option_shift(RIGHT_CORNER_BRACKET),key(ENTER),key(UP_ARROW)],
+  'ルビ' => [key_with_shift(YEN),key(ENTER),key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
 
   '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
   '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
   '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
-  '《改' => [key_with_option(LEFT_CORNER_BRACKET),key(ENTER)],
+  '《改' => [key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
   '（改' => [key_with_shift('8'),key(ENTER)],
+
   '」改改' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER)],
   '」改' => [key(RIGHT_CORNER_BRACKET),key(ENTER)],
   '』改' => [key_with_shift(RIGHT_CORNER_BRACKET),key(ENTER)],
-  '》改' => [key_with_option_shift(LEFT_CORNER_BRACKET),key(ENTER)],
+  '》改' => [key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
   '）改' => [key_with_shift('9'),key(ENTER)],
 
 }.freeze
@@ -346,51 +446,71 @@ def main
     'title' => 'Japanese NAGINATA STYLE (v11)',
     'rules' => [
       {
-        'description' => "Japanese NAGINATA STYLE (v11) Build #{now} ",
+        'description' => "Japanese NAGINATA STYLE (v11) #{MODE} Build #{now} ",
         'manipulators' => [
           # 同時打鍵数の多いものから書く
           shiftkeydef(),#連続シフト用定義
-          # ------------------------------
-
           #編集モード1定義
-          
+          editmode_one_left('q','文末'),
+          editmode_one_left('w','文頭'),
+          # E,Rは未使用
+          editmode_one_left('t','十字目'),
+          editmode_one_left('a','リドゥ'),#shift + command + z
+          editmode_one_left('s','保存'),
+          editmode_one_left('d','頁下'),
+          editmode_one_left('f','頁上'),
+          editmode_one_left('g','二十字目'),
+          editmode_one_left('z','アンドゥ'),
+          editmode_one_left('x','カット'),
+          editmode_one_left('c','コピー'),
+          editmode_one_left('v','ペースト'),
+          editmode_one_left('b','三十字目'),
+          editmode_one_right('y','行頭'),
+          editmode_one_right('u','行末削除'),
+          editmode_one_right('i','確定復行'),#再変換がもともと定義されていたけど差がわからない
+          editmode_one_right('o','削除'),
+          editmode_one_right('p','入力撤回'),
+          editmode_one_right('h','確定エンド'),
+          editmode_one_right('j','上矢印'),
+          editmode_one_right('k','シフト上矢印'),
+          editmode_one_right('l','五上矢印'),
+          editmode_one_right(SEMICOLON,'カタカナに'),
+          editmode_one_right('n','行末'),
+          editmode_one_right('m','下矢印'),
+          editmode_one_right(COMMA,'シフト下矢印'),
+          editmode_one_right(PERIOD,'五下矢印'),
+          editmode_one_right(SLASH,'ひらがなに'),
           #編集モード2定義
           editmode_two_left('q','／改'),
           editmode_two_left('w','：改'),
           editmode_two_left('e','・改'),
           editmode_two_left('r','○改'),
           editmode_two_left('t','行頭空白改'),
-
           editmode_two_left('a','【改'),
           editmode_two_left('s','〈改'),
           editmode_two_left('d','！改'),
           editmode_two_left('f','？改'),
           editmode_two_left('g','行頭空白三改'),
-
           editmode_two_left('z','】改'),
           editmode_two_left('x','〉改'),
           editmode_two_left('c','……改'),
           editmode_two_left('v','──改'),
           editmode_two_left('b','三空白'),
-
           editmode_two_right('y','」改改空'),
           editmode_two_right('u','行頭削除'),
           editmode_two_right('i','確定復行'),#確定Undo,旧称ことえりにこの機能見当たらなかったんで再変換とおんなじ
           editmode_two_right('o','縦棒改'),
           editmode_two_right('p','ルビ'),
-
           editmode_two_right('h','」改「'),
           editmode_two_right('j','「改'),
           editmode_two_right('k','『改'),
           editmode_two_right('l','《改'),
           editmode_two_right(SEMICOLON,'（改'),
-
           editmode_two_right('n','」改改'),
           editmode_two_right('m','」改'),
           editmode_two_right(COMMA,'』改'),
           editmode_two_right(PERIOD,'》改'),
           editmode_two_right(SLASH,'）改'),
-
           # 3同時打鍵
           # 小書き： シフト半濁音同時押し
           three_keys(SPACEBAR,'v','j','ぁ'),
@@ -452,7 +572,6 @@ def main
           two_keys('l','f','づ'),
           two_keys('n','f','だ'),
           two_keys(PERIOD,'f','ぶ'),
-
           # 左手濁点
           two_keys('s','j','ぎ'),
           two_keys('e','j','で'),
@@ -467,18 +586,14 @@ def main
           two_keys('w','j','ば'),
           two_keys('v','j','ご'),
           two_keys('b','j','ぞ'),
-
           # 右手半濁音
           two_keys('p','v','ぺ'),
           two_keys(PERIOD,'v','ぷ'),
-
           # 左手半濁音
           two_keys('z','m','ぽ'),
           two_keys('x','m','ぴ'),
           two_keys('w','m','ぱ'),
-
           # 拗音シフト やゆよと同時押しで、ゃゅょが付く
-
           two_keys('s',SEMICOLON,'きゃ'),
           two_keys('e',SEMICOLON,'りゃ'),
           two_keys('r',SEMICOLON,'しゃ'),
@@ -486,7 +601,6 @@ def main
           two_keys('d',SEMICOLON,'にゃ'),
           two_keys('g',SEMICOLON,'ちゃ'),
           two_keys('x',SEMICOLON,'ひゃ'),
-
           two_keys('s','o','きゅ'),
           two_keys('e','o','りゅ'),
           two_keys('r','o','しゅ'),
@@ -494,18 +608,15 @@ def main
           two_keys('d','o','にゅ'),
           two_keys('g','o','ちゅ'),
           two_keys('x','o','ひゅ'),
-
           two_keys('s','i','きょ'),
           two_keys('e','i','りょ'),
           two_keys('r','i','しょ'),
           two_keys('d','i','にょ'),
           two_keys('g','i','ちょ'),
           two_keys('x','i','ひょ'),
-
           two_keys('w','i','みょ'),
           two_keys('w',SEMICOLON,'みゃ'),
           two_keys('w','o','みゅ'),
-
           two_keys('r','i','しょ'),
           two_keys('r',SEMICOLON,'しゃ'),
           two_keys('r','o','しゅ'),
@@ -521,7 +632,6 @@ def main
           two_keys('x','i','ひょ'),
           two_keys('x',SEMICOLON,'ひゃ'),
           two_keys('x','o','ひゅ'),
-
           # 外来音
           two_keys('e','k','てぃ'),
           two_keys('d','l','とぅ'),
@@ -530,132 +640,108 @@ def main
           two_keys('q','k','ヴぃ'),
           two_keys('q','n','ヴぉ'),
           two_keys('q','o','ヴゅ'),
-
           # 右手領域の同時押し外来音
           two_keys('l','j','うぁ'),
           two_keys('l','k','うぃ'),
           two_keys('l','p','うぇ'),
           two_keys('l','n','うぉ'),
-
           two_keys(PERIOD,'j','ふぁ'),
           two_keys(PERIOD,'k','ふぃ'),
           two_keys(PERIOD,'p','ふぇ'),
           two_keys(PERIOD,'n','ふぉ'),
           two_keys(PERIOD,'o','ふゅ'),
-
           two_keys('r','p','しぇ'),
           two_keys('g','p','ちぇ'),
-
           #特殊操作
           two_keys('v','m','改'),
           two_keys_always('h','j','仮'),#USモードでも効く定義
           two_keys('f','g','英'),
-
           # ------------------------------
           # シフト(スペースキー)
-
           #shift_key('q', ''),
           shift_key('s', 'ね'),
           shift_key('e', 'り'),
           shift_key(COMMA, 'む'),
           #shift_key('t', ''),
-
           #shift_key('y', ''),
           shift_key('u', 'さ'),
           shift_key('i', 'よ'),
           shift_key('p', 'え'),
           shift_key('r', 'め'),
-
           #shift_key('a', ''),
           shift_key('w', 'み'),
           shift_key('d', 'に'),
           shift_key('f', 'ま'),
           shift_key('g', 'ち'),
-
           shift_key('h', 'わ'),
           shift_key('j', 'の'),
           shift_key('k', 'も'),
           shift_key('l', 'つ'),
           shift_key(SEMICOLON, 'や'),
-
           shift_key('a', 'せ'),
           #shift_key('x', 'ひ'),
           shift_key('c', 'を'),
           shift_key('v', '、'),
           shift_key('b', 'ぬ'),
-
           shift_key('n', 'お'),
           shift_key('m', '。改'),
           shift_key('o', 'ゆ'),
           shift_key(PERIOD, 'ふ'),
           #shift_key('/', ''),
-
           # ------------------------------
           # 連続シフトシフト(スペースキー)
-
           #continuous_shift('q', ''),
           continuous_shift('s', 'ね'),
           continuous_shift('e', 'り'),
           continuous_shift(COMMA, 'む'),
           #continuous_shift('t', ''),
-
           #continuous_shift('y', ''),
           continuous_shift('u', 'さ'),
           continuous_shift('i', 'よ'),
           continuous_shift('p', 'え'),
           continuous_shift('r', 'め'),
-
           #continuous_shift('a', ''),
           continuous_shift('w', 'み'),
           continuous_shift('d', 'に'),
           continuous_shift('f', 'ま'),
           continuous_shift('g', 'ち'),
-
           continuous_shift('h', 'わ'),
           continuous_shift('j', 'の'),
           continuous_shift('k', 'も'),
           continuous_shift('l', 'つ'),
           continuous_shift(SEMICOLON, 'や'),
-
           continuous_shift('a', 'せ'),
           #continuous_shift('x', 'ひ'),
           continuous_shift('c', 'を'),
           continuous_shift('v', '、'),
           continuous_shift('b', 'ぬ'),
-
           continuous_shift('n', 'お'),
           continuous_shift('m', '。改'),
           continuous_shift('o', 'ゆ'),
           continuous_shift(PERIOD, 'ふ'),
           #continuous_shift('/', ''),
-
           # ------------------------------
           # シフトなし(単打)
-
           normal_key('q', 'ヴ'),
           normal_key('s', 'き'),
           normal_key('e', 'て'),
           normal_key('r', 'し'),
           normal_key('t', '←'),
-
           normal_key('y', '→'),
           normal_key('u', '削'),
           normal_key('i', 'る'),
           normal_key('o', 'す'),
           normal_key('p', 'へ'),
-
           normal_key('z', 'ほ'),
           normal_key('c', 'け'),
           normal_key('d', 'と'),
           normal_key('f', 'か'),
           normal_key('g', 'っ'),
-
           normal_key('h', 'く'),
           normal_key('j', 'あ'),
           normal_key('k', 'い'),
           normal_key('l', 'う'),
           normal_key(SEMICOLON, 'ー'),
-
           normal_key('a', 'ろ'),
           normal_key('x', 'ひ'),
           normal_key('w', 'は'),
@@ -734,7 +820,6 @@ def continuous_shift(key, char)
     'conditions' => CONDITIONS_SHIFT,
   }
 end
-
 
 def shift_key(key, char)
   {
@@ -874,6 +959,48 @@ def editmode_two_right(key,char)
         },
         {
           'key_code' => 'c',
+        },
+        {
+          'key_code' => key,
+        },
+      ],
+    },
+    'to' => ROMAN_MAP[char],
+    'conditions' => CONDITIONS,
+  }
+end
+
+def editmode_one_left(key,char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => 'j',
+        },
+        {
+          'key_code' => 'k',
+        },
+        {
+          'key_code' => key,
+        },
+      ],
+    },
+    'to' => ROMAN_MAP[char],
+    'conditions' => CONDITIONS,
+  }
+end
+
+def editmode_one_right(key,char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => 'd',
+        },
+        {
+          'key_code' => 'f',
         },
         {
           'key_code' => key,
