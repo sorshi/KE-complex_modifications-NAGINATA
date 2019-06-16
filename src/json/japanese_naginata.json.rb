@@ -386,7 +386,7 @@ ROMAN_MAP = {
 
   '行頭' => [key_with_control('a')],
   '行末削除' => [key_with_control('k')], #カーソル位置から行末まで削除
-    #'再変換' 確定復行と同一と思われるため未定義
+  '再変換' => [key_with_option_shift('r')],
   '削除' => [key_with_control('d')],
   '入力撤回' => [key(ESC),key(ESC)],
   '確定エンド' => [key(ENTER),key_with_control('e')],
@@ -467,7 +467,7 @@ def main
           editmode_one_left('b','三十字目'),
           editmode_one_right('y','行頭'),
           editmode_one_right('u','行末削除'),
-          editmode_one_right('i','確定復行'),#再変換がもともと定義されていたけど差がわからない
+          editmode_one_right('i','再変換'),
           editmode_one_right('o','削除'),
           editmode_one_right('p','入力撤回'),
           editmode_one_right('h','確定エンド'),
@@ -498,7 +498,7 @@ def main
           editmode_two_left('b','三空白'),
           editmode_two_right('y','」改改空'),
           editmode_two_right('u','行頭削除'),
-          editmode_two_right('i','確定復行'),#確定Undo,旧称ことえりにこの機能見当たらなかったんで再変換とおんなじ
+          editmode_two_right('i','確定復行'),#確定Undo
           editmode_two_right('o','縦棒改'),
           editmode_two_right('p','ルビ'),
           editmode_two_right('h','」改「'),

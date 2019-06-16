@@ -64,10 +64,10 @@ Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイル
 
 - 機能モード1-YキーはオリジナルではHomeキーがアサインされていますが、Mac版ではMacのHomeキーではなく同じ動作となる行頭へ移動(Ctrl + a)をアサインしています。Endも同様です。基本的に他の機能も動作が同じとなるようなアサインを目指しています。
 
-- 確定アンドゥと再変換はカナキー2回押しの同じ操作が割り当てられています。
-
 - いまのところ「◯」「《」「》」の3記号は入力に対応していません。これはKarabiner-Elementsが入力する文字を入れ替える作りではなく、キー入力を再現する仕組みに由来するものです。
 またエディタの構造(NSTextViewを利用しているかどうか?)によって入力できない記号があったり、旧ことえりから名前の変わった純正日本語入力だと入力できるけれども他のInputMethodだと入力できないなど環境依存が強いので入力できない場合には、文字から変換などをお試しください。入力可能記号についてはこの辺をご参考ください。[Mac 記号や特殊文字のキーボードショートカットまとめ（133種類） / Inforati](http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-use-special-characters-and-symbols-keyboard-shortcut-with-macos.html)
+
+- 再変換は効かないエディタもあります。
 
 - キーボードショートカットについてはこの辺もご参考ください。[Mac のキーボードショートカット - Apple サポート](https://support.apple.com/ja-jp/HT201236)
 
