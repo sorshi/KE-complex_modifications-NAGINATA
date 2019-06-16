@@ -19,6 +19,10 @@ Macでの動作は[Karabiner-Elements](https://pqrs.org/osx/karabiner/)が必要
 
 4. InputMethodの入力方式はローマ字入力にしてください。
 
+5. 薙刀式の使い方はオリジナル版の詳しいガイドブックをご参考ください。[薙刀式v11完成版マニュアル.pdf](http://oookaworks.up.seesaa.net/image/E89699E58880E5BC8Fv11E5AE8CE68890E78988E3839EE3838BE383A5E382A2E383AB.pdf)
+
+6. (横書き版との併用は下のカスタマイズの項目に記載しています)
+
 
 # 実装済み機能
 
@@ -44,6 +48,9 @@ ruby ./japanese_naginata.json.rb > japanese_naginata.json
 ```
 ruby ./japanese_naginata.json.rb h > japanese_naginata_h.json
 ```
+配布状態で縦書き用の定義ファイルjapanese_naginata.jsonと横書き用定義ファイルjapanese_naginata_h.jsonの2つを同梱しています。
+
+Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイルを作成してメニューから切り替えると使い分けが簡単です。
 
 # ToDo
 
