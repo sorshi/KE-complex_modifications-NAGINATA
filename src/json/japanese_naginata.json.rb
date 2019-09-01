@@ -781,6 +781,13 @@ def shiftkeydef()
       'set_variable'=>
         {'name' => 'shifted','value' => 0}
     ],
+    'parameters': { 'basic.to_if_held_down_threshold_milliseconds': 800 },
+    'to_if_held_down': [
+      {
+        'key_code': SPACEBAR,
+        'repeat': true
+      }
+    ],
     'conditions' => CONDITIONS,
   }
 end

@@ -11,11 +11,11 @@ Macでの動作は[Karabiner-Elements](https://pqrs.org/osx/karabiner/)が必要
 
 # インストール
 
-1. まずKarabiner-Elementsをインストールしてください。
+1. まず[Karabiner-Elements](https://pqrs.org/osx/karabiner/)をインストールしてください。
 
-2. 次にこのプロジェクトに含まれるjapanese_naginata.jsonを~/.config/karabiner/assets/complex_modifications/に置きます。
+2. 次にこのプロジェクトに含まれる/docs/json/japanese_naginata.jsonを~/.config/karabiner/assets/complex_modifications/に置きます。
 
-3. メニューバーからKarabiner-Elementsの設定(Preferences...)を開いて、Complex ModificationsのRulesからAdd ruleを選びJapanese NAGINATA STYLE(v11)なんとか を選びEnableにします。
+3. メニューバーからKarabiner-Elementsの設定(Preferences...)を開いて、Complex ModificationsのRulesからAdd ruleを選びJapanese NAGINATA STYLE(v11)なんとか を選びEnableにします。(なんとかの部分には横書き版/縦書き版のHorizontal/Default(Vertical)やビルドタイムスタンプが入ります)
 
 4. InputMethodの入力方式はローマ字入力にしてください。
 
@@ -48,7 +48,7 @@ ruby ./japanese_naginata.json.rb > japanese_naginata.json
 ```
 ruby ./japanese_naginata.json.rb h > japanese_naginata_h.json
 ```
-配布状態で縦書き用の定義ファイルjapanese_naginata.jsonと横書き用定義ファイルjapanese_naginata_h.jsonの2つを同梱しています。
+配布状態で縦書き用の定義ファイルjapanese_naginata.jsonと横書き用定義ファイルjapanese_naginata_h.jsonの2つを同梱しています。横書き用の薙刀式配列図は原作者の大岡さんによってこちらで公開されています。[【薙刀式】横書き用](http://oookaworks.seesaa.net/article/467784995.html)
 
 Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイルを作成してメニューから切り替えると使い分けが簡単です。
 

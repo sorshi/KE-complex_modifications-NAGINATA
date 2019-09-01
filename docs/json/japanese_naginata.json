@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1560681808 ",
+      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1567346210 ",
       "manipulators": [
         {
           "type": "basic",
@@ -28,6 +28,15 @@
                 "name": "shifted",
                 "value": 0
               }
+            }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 800
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "spacebar",
+              "repeat": true
             }
           ],
           "conditions": [
