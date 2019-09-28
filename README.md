@@ -9,19 +9,25 @@ Macでの動作は[Karabiner-Elements](https://pqrs.org/osx/karabiner/)が必要
 薙刀式は専用キーボードを要求せず、疲れにくく、覚えやすく、効率のよい日本語入力を目指して大岡俊彦さんによって2018年に開発されたものです。比較対象として並べられることの多い約40年前に開発された親指シフト(NICOLA配列)との相違点についてはこちらをご参考ください。
 [【入力の話1】親指シフトよりいい方法が、少なくとも10個ある: 大岡俊彦の作品置き場](http://oookaworks.seesaa.net/article/456683570.html)
 
-# インストール
+# インストール手順
 
-1. まず[Karabiner-Elements](https://pqrs.org/osx/karabiner/)をインストールしてください。
+1. Macのシステム環境設定→言語と地域→キーボード環境設定→入力ソース→＋→その他→「Unicode 16進数入力」を追加します。
 
-2. 次にこのプロジェクトに含まれる/docs/json/japanese_naginata.jsonを~/.config/karabiner/assets/complex_modifications/に置きます。
+   [Mac の「言語と地域」環境設定を変更する - Apple サポート](https://support.apple.com/ja-jp/guide/mac-help/intl163/mac )
 
-3. メニューバーからKarabiner-Elementsの設定(Preferences...)を開いて、Complex ModificationsのRulesからAdd ruleを選びJapanese NAGINATA STYLE(v11)なんとか を選びEnableにします。(なんとかの部分には横書き版/縦書き版のHorizontal/Default(Vertical)やビルドタイムスタンプが入ります)
+   [入力ソースを使って Mac で別の言語を入力する - Apple サポート ](https://support.apple.com/ja-jp/guide/mac-help/mchlp1406/mac )
 
-4. InputMethodの入力方式はローマ字入力にしてください。
+2. キーマップ変更ユーティリティの[Karabiner-Elements](https://pqrs.org/osx/karabiner/)をインストールします。
 
-5. 薙刀式の使い方はオリジナル版の詳しいガイドブックをご参考ください。[薙刀式v11完成版マニュアル.pdf](http://oookaworks.up.seesaa.net/image/E89699E58880E5BC8Fv11E5AE8CE68890E78988E3839EE3838BE383A5E382A2E383AB.pdf)
+3. 次にこのプロジェクトに含まれる/docs/json/japanese_naginata.jsonとjapanese_naginata_h.jsonの2つを~/.config/karabiner/assets/complex_modifications/に置きます。
 
-6. (横書き版との併用は下のカスタマイズの項目に記載しています)
+4. メニューバーからKarabiner-Elementsの設定(Preferences...)を開いて、Complex ModificationsのRulesからAdd ruleを選びJapanese NAGINATA STYLE(v11)なんとか を選びEnableにします。(なんとかの部分には横書き版/縦書き版のHorizontal/Default(Vertical)やビルドタイムスタンプが入ります)
+
+5. InputMethodの入力方式はローマ字入力に設定します。
+
+6. 薙刀式の使い方はオリジナル版の詳しいガイドブックをご参考ください。[薙刀式v11完成版マニュアル.pdf](http://oookaworks.up.seesaa.net/image/E89699E58880E5BC8Fv11E5AE8CE68890E78988E3839EE3838BE383A5E382A2E383AB.pdf)
+
+7. (横書き版との併用は下のカスタマイズの項目に記載しています)
 
 
 # 実装済み機能
@@ -55,25 +61,18 @@ Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイル
 # ToDo
 
 - オリジナルのWindows版薙刀式を使い込んでないので理解が間違っている箇所があるかもしれません。とくに編集モードは検証が怪しいです。ぜひご感想やプルリクお寄せください。
-
 - JISキーボード以外は記号類が多分動作しません。適当にカスタマイズしてみてください。
+- Google日本語入力だと中黒などの一部記号の配置が異なります。(なんでやねん？)
 
 # その他
 
 - 薙刀式中断/再開のショートカット(Shift+Ctrl+0/Shift+Ctrl+1)は未実装です。メニューバーから操作してください。
-
+- 固有名詞ショートカットは未実装です。
 - 機能モード1-YキーはオリジナルではHomeキーがアサインされていますが、Mac版ではMacのHomeキーではなく同じ動作となる行頭へ移動(Ctrl + a)をアサインしています。Endも同様です。基本的に他の機能も動作が同じとなるようなアサインを目指しています。
-
-- いまのところ「◯」「《」「》」の3記号は入力に対応していません。これはKarabiner-Elementsが入力する文字を入れ替える作りではなく、キー入力を再現する仕組みに由来するものです。
-またエディタの構造(NSTextViewを利用しているかどうか?)によって入力できない記号があったり、旧ことえりから名前の変わった純正日本語入力だと入力できるけれども他のInputMethodだと入力できないなど環境依存が強いので入力できない場合には、文字から変換などをお試しください。入力可能記号についてはこの辺をご参考ください。[Mac 記号や特殊文字のキーボードショートカットまとめ（133種類） / Inforati](http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-use-special-characters-and-symbols-keyboard-shortcut-with-macos.html)
-
+- エディタの構造(NSTextViewを利用しているかどうか?)によって入力できない記号があったり、旧ことえりから名前の変わった純正日本語入力だと入力できるけれども他のInputMethodだと入力できないなど環境依存が強いので入力できない場合には、文字から変換などをお試しください。入力可能記号についてはこの辺をご参考ください。[Mac 記号や特殊文字のキーボードショートカットまとめ（133種類） / Inforati](http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-use-special-characters-and-symbols-keyboard-shortcut-with-macos.html)
 - 再変換は効かないエディタもあります。
-
 - キーボードショートカットについてはこの辺もご参考ください。[Mac のキーボードショートカット - Apple サポート](https://support.apple.com/ja-jp/HT201236)
-
 - 実際に入力されているキーコードはLaunch Karabiner-EventViewerから起動できるEventViewerでご確認いただけます。
-
 - 縦書きでの検証は純正のテキストエディットで行いました。この環境だと「文頭へ移動」(Cmd + →)のショートカットが他機能と衝突しているため動作しません。
-
 - japanese_naginata.json.rbは[example_japanese_nicola.json.rb](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_japanese_nicola.json.rb)をベースに作成させていただきました。
 

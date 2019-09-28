@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1567346217 ",
+      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1569691109 ",
       "manipulators": [
         {
           "type": "basic",
@@ -1899,35 +1899,44 @@
           },
           "to": [
             {
-              "key_code": "s",
+              "select_input_source": {
+                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "i",
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "r",
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "o",
+              "key_code": "7",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "m",
+              "key_code": "return_or_enter",
               "repeat": false
             },
             {
-              "key_code": "a",
-              "repeat": false
-            },
-            {
-              "key_code": "r",
-              "repeat": false
-            },
-            {
-              "key_code": "u",
+              "key_code": "lang1",
               "repeat": false
             }
           ],
@@ -2847,23 +2856,88 @@
               "repeat": false
             },
             {
-              "key_code": "k",
+              "key_code": "e",
+              "modifiers": [
+                "left_control"
+              ],
+              "repeat": false
+            },
+            {
+              "select_input_source": {
+                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
               "key_code": "a",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "k",
+              "key_code": "lang1",
               "repeat": false
             },
             {
-              "key_code": "k",
+              "select_input_source": {
+                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "o",
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "lang1",
+              "repeat": false
+            },
+            {
+              "key_code": "left_arrow",
               "repeat": false
             }
           ],
@@ -3078,23 +3152,44 @@
           },
           "to": [
             {
-              "key_code": "k",
+              "select_input_source": {
+                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
+              "repeat": false
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
               "key_code": "a",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "k",
+              "key_code": "return_or_enter",
               "repeat": false
             },
             {
-              "key_code": "k",
-              "repeat": false
-            },
-            {
-              "key_code": "o",
+              "key_code": "lang1",
               "repeat": false
             }
           ],
@@ -3355,23 +3450,44 @@
           },
           "to": [
             {
-              "key_code": "k",
+              "select_input_source": {
+                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
+              }
+            },
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "a",
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "k",
+              "key_code": "0",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "k",
+              "key_code": "b",
+              "modifiers": [
+                "left_alt"
+              ],
               "repeat": false
             },
             {
-              "key_code": "o",
+              "key_code": "return_or_enter",
+              "repeat": false
+            },
+            {
+              "key_code": "lang1",
               "repeat": false
             }
           ],

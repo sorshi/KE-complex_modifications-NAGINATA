@@ -198,6 +198,15 @@ def key_with_command_shift(key_code)
   }
 end
 
+def start_unicodemode()
+  {
+      # 'select_input_source' => 'com.apple.keylayout.UnicodeHexInput',
+      'select_input_source' => {
+        'input_source_id' => 'com.apple.keylayout.UnicodeHexInput',
+      }
+  }
+end
+
 ROMAN_MAP = {
   'あ' => [key('a')],
   'い' => [key('i')],
@@ -404,7 +413,7 @@ ROMAN_MAP = {
   '／改' => [key(SLASH),key(ENTER)],
   '：改' => [key(COLON),key(ENTER)],
   '・改' => [key_with_option(SLASH),key(ENTER)],
-  '○改' => [key('s'), key('i'),key('r'), key('o'),key('m'), key('a'),key('r'), key('u')],
+  '○改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('7'),key(ENTER),key(JPN)],
   '行頭空白改' => [key_with_control('a'),key(SPACEBAR),key(ENTER),key_with_control('e')],
 
   '【改' => [key_with_option('8'),key(ENTER)],
@@ -423,18 +432,25 @@ ROMAN_MAP = {
   '行頭削除' => [key_with_command_shift(UP_ARROW),key_with_repeat(BACK_SPACE)], #カーソル位置から行頭まで削除
   '確定復行' => [key(JPN),key(JPN)],#再変換と同一
   '縦棒改' => [key_with_shift(YEN),key(ENTER)],
-  'ルビ' => [key_with_shift(YEN),key(ENTER),key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
+  'ルビ' => [key_with_shift(YEN),key(ENTER),
+  key_with_control('e'),
+  start_unicodemode(),
+  key_with_option('3'),key_with_option('0'), key_with_option('0'),key_with_option('a'),key(JPN),
+  start_unicodemode(),
+  key_with_option('3'),key_with_option('0'), key_with_option('0'),key_with_option('b'),key(JPN),
+  key(UP_ARROW)
+],
 
   '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
   '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
   '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
-  '《改' => [key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
+  '《改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(ENTER),key(JPN)],
   '（改' => [key_with_shift('8'),key(ENTER)],
 
   '」改改' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER)],
   '」改' => [key(RIGHT_CORNER_BRACKET),key(ENTER)],
   '』改' => [key_with_shift(RIGHT_CORNER_BRACKET),key(ENTER)],
-  '》改' => [key('k'),key('a'),key('k'),key('k'),key('o')],#入力不可能
+  '》改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(ENTER),key(JPN)],
   '）改' => [key_with_shift('9'),key(ENTER)],
 
 }.freeze
@@ -484,7 +500,8 @@ def main
           editmode_two_left('q','／改'),
           editmode_two_left('w','：改'),
           editmode_two_left('e','・改'),
-          editmode_two_left('r','○改'),
+          #editmode_two_left('r','○改'),
+          three_keys('m',COMMA,'r','○改'),
           editmode_two_left('t','行頭空白改'),
           editmode_two_left('a','【改'),
           editmode_two_left('s','〈改'),
@@ -500,16 +517,19 @@ def main
           editmode_two_right('u','行頭削除'),
           editmode_two_right('i','確定復行'),#確定Undo
           editmode_two_right('o','縦棒改'),
-          editmode_two_right('p','ルビ'),
+          # editmode_two_right('p','ルビ'),
+          three_keys('v','c','p','ルビ'),
           editmode_two_right('h','」改「'),
           editmode_two_right('j','「改'),
           editmode_two_right('k','『改'),
-          editmode_two_right('l','《改'),
+          # editmode_two_right('l','《改'),
+          three_keys('v','c','l','《改'),
           editmode_two_right(SEMICOLON,'（改'),
           editmode_two_right('n','」改改'),
           editmode_two_right('m','」改'),
           editmode_two_right(COMMA,'』改'),
-          editmode_two_right(PERIOD,'》改'),
+          # editmode_two_right(PERIOD,'》改'),
+          three_keys('v','c',PERIOD,'》改'),
           editmode_two_right(SLASH,'）改'),
           # 3同時打鍵
           # 小書き： シフト半濁音同時押し
