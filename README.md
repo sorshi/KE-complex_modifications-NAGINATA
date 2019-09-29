@@ -17,6 +17,8 @@ Macでの動作は[Karabiner-Elements](https://pqrs.org/osx/karabiner/)が必要
 
    [入力ソースを使って Mac で別の言語を入力する - Apple サポート ](https://support.apple.com/ja-jp/guide/mac-help/mchlp1406/mac )
 
+   ![Screenshot Unicode 16進数入力](https://pbs.twimg.com/media/EFkh70oUcAYOdNc?format=png)
+
 2. キーマップ変更ユーティリティの[Karabiner-Elements](https://pqrs.org/osx/karabiner/)をインストールします。
 
 3. 次にこのプロジェクトに含まれる/docs/json/japanese_naginata.jsonとjapanese_naginata_h.jsonの2つを~/.config/karabiner/assets/complex_modifications/に置きます。
