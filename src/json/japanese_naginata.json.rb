@@ -432,8 +432,7 @@ ROMAN_MAP = {
   '行頭削除' => [key_with_command_shift(UP_ARROW),key_with_repeat(BACK_SPACE)], #カーソル位置から行頭まで削除
   '確定復行' => [key(JPN),key(JPN)],#再変換と同一
   '縦棒改' => [key_with_shift(YEN),key(ENTER)],
-  'ルビ' => [key_with_shift(YEN),key(ENTER),key_with_control('e'),start_unicodemode(),
-key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(JPN),start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(JPN),key(UP_ARROW)],
+  'ルビ' => [key_with_shift(YEN),key(ENTER),key_with_control('e'),start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(JPN),start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(JPN),key(UP_ARROW)],
   '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
   '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
   '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
