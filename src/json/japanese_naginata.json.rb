@@ -200,7 +200,6 @@ end
 
 def start_unicodemode()
   {
-      # 'select_input_source' => 'com.apple.keylayout.UnicodeHexInput',
       'select_input_source' => {
         'input_source_id' => 'com.apple.keylayout.UnicodeHexInput',
       }
@@ -413,17 +412,17 @@ ROMAN_MAP = {
   '／改' => [key(SLASH),key(ENTER)],
   '：改' => [key(COLON),key(ENTER)],
   '・改' => [key_with_option(SLASH),key(ENTER)],
-  '○改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('7'),key(ENTER),key(JPN)],
+  '○改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('7'),key(JPN)],
   '行頭空白改' => [key_with_control('a'),key(SPACEBAR),key(ENTER),key_with_control('e')],
 
   '【改' => [key_with_option('8'),key(ENTER)],
-  '〈改' => [key_with_option_shift('3'),key(ENTER)],
+  '〈改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('8'),key(JPN)],
   '！改' => [key_with_shift('1'),key(ENTER)],
   '？改' => [key_with_shift(SLASH),key(ENTER)],
   '行頭空白三改' => [key_with_control('a'),key(SPACEBAR),key(SPACEBAR),key(SPACEBAR),key(ENTER),key_with_control('e')],
 
   '】改' => [key_with_option('9'),key(ENTER)],
-  '〉改' => [key_with_option_shift('4'),key(ENTER)],
+  '〉改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('9'),key(JPN)],
   '……改' => [key_with_option(SEMICOLON),key_with_option(SEMICOLON),key(ENTER)],
   '──改' => [key_with_option_shift(HYPHEN),key_with_option_shift(HYPHEN),key(ENTER)],
   '三空白' => [key(SPACEBAR),key(SPACEBAR),key(SPACEBAR)],
@@ -436,13 +435,13 @@ ROMAN_MAP = {
   '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
   '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
   '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
-  '《改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(ENTER),key(JPN)],
+  '《改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(JPN)],
   '（改' => [key_with_shift('8'),key(ENTER)],
 
   '」改改' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER)],
   '」改' => [key(RIGHT_CORNER_BRACKET),key(ENTER)],
   '』改' => [key_with_shift(RIGHT_CORNER_BRACKET),key(ENTER)],
-  '》改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(ENTER),key(JPN)],
+  '》改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(JPN)],
   '）改' => [key_with_shift('9'),key(ENTER)],
 
 }.freeze
