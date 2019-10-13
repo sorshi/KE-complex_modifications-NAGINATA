@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1569737168 ",
+      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1570985659 ",
       "manipulators": [
         {
           "type": "basic",
@@ -11586,6 +11586,114 @@
         {
           "type": "basic",
           "from": {
+            "simultaneous": [
+              {
+                "key_code": "t"
+              },
+              {
+                "key_code": "spacebar"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "shifted",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "y"
+              },
+              {
+                "key_code": "spacebar"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "repeat": false
+            },
+            {
+              "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "shifted",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "s"
           },
           "to": [
@@ -12641,6 +12749,94 @@
             },
             {
               "key_code": "u",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shifted",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t"
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shifted",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y"
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "repeat": false
+            },
+            {
+              "key_code": "e",
               "repeat": false
             }
           ],

@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
 #
 # You can generate json by executing the following command on Terminal.
-#
 # $ ruby ./japanese_naginata.json.rb > ../../docs/json/japanese_naginata.json
 #
 # Horizontal Version
 # $ ruby ./japanese_naginata.json.rb h > ../../docs/json/japanese_naginata_h.json
+#
+# and put here.
+# ~/.config/karabiner/assets/complex_modifications/
 #
 # This script made based example_japanese_nicola.json.rb.
 #
@@ -698,6 +700,8 @@ def main
           shift_key('m', '。改'),
           shift_key('o', 'ゆ'),
           shift_key(PERIOD, 'ふ'),
+          shift_key('t', 'え'),
+          shift_key('y', 'へ'),
           #shift_key('/', ''),
           # ------------------------------
           # 連続シフトシフト(スペースキー)
@@ -730,6 +734,8 @@ def main
           continuous_shift('m', '。改'),
           continuous_shift('o', 'ゆ'),
           continuous_shift(PERIOD, 'ふ'),
+          continuous_shift('t', 'え'),
+          continuous_shift('y', 'へ'),
           #continuous_shift('/', ''),
           # ------------------------------
           # シフトなし(単打)

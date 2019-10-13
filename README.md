@@ -78,4 +78,5 @@ Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイル
 - 実際に入力されているキーコードはLaunch Karabiner-EventViewerから起動できるEventViewerでご確認いただけます。
 - 縦書きでの検証は純正のテキストエディットで行いました。この環境だと「文頭へ移動」(Cmd + →)のショートカットが他機能と衝突しているため動作しません。
 - japanese_naginata.json.rbは[example_japanese_nicola.json.rb](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_japanese_nicola.json.rb)をベースに作成させていただきました。
+- (Mac版独自の拡張としてオリジナルでは未アサインだったセンターシフト+Tに「え」、センターシフト+Yに「へ」を割り当てています。よく使う割にPキーが遠いなあ、と思ったんで。ドキュメントには書いておきますが一応隠し機能的な扱いで今後変わったりなくなったりするかもしれません)
 
