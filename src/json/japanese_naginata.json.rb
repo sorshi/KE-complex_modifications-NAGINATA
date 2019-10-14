@@ -17,7 +17,7 @@
 # http://oookaworks.seesaa.net/article/456099128.html
 #
 # This Mac porting version hosted on https://github.com/sorshi/KE-complex_modifications-NAGINATA
-# made by DCC-JPL Japan/Sorshi
+# made by DCC-JPL Japan<http://www.dcc-jpl.com/>/Sorshi<sorshi@dcc-jpl.com>
 
 require 'json'
 require 'date'
@@ -669,19 +669,19 @@ def main
           two_keys('v','m','改'),
           two_keys_always('h','j','仮'),#USモードでも効く定義
           two_keys('f','g','英'),
+          #Mac版のみの拡張
+          two_keys('y','f','べ'),
+          two_keys('y','v','ぺ'),
           # ------------------------------
           # シフト(スペースキー)
           #shift_key('q', ''),
           shift_key('s', 'ね'),
           shift_key('e', 'り'),
           shift_key(COMMA, 'む'),
-          #shift_key('t', ''),
-          #shift_key('y', ''),
           shift_key('u', 'さ'),
           shift_key('i', 'よ'),
           shift_key('p', 'え'),
           shift_key('r', 'め'),
-          #shift_key('a', ''),
           shift_key('w', 'み'),
           shift_key('d', 'に'),
           shift_key('f', 'ま'),
@@ -692,7 +692,8 @@ def main
           shift_key('l', 'つ'),
           shift_key(SEMICOLON, 'や'),
           shift_key('a', 'せ'),
-          #shift_key('x', 'ひ'),
+          #shift_key('z', ''),
+          #shift_key('x', ''),
           shift_key('c', 'を'),
           shift_key('v', '、'),
           shift_key('b', 'ぬ'),
@@ -700,8 +701,8 @@ def main
           shift_key('m', '。改'),
           shift_key('o', 'ゆ'),
           shift_key(PERIOD, 'ふ'),
-          shift_key('t', 'え'),
-          shift_key('y', 'へ'),
+          shift_key('t', 'え'),#Mac版のみの拡張
+          shift_key('y', 'へ'),#Mac版のみの拡張
           #shift_key('/', ''),
           # ------------------------------
           # 連続シフトシフト(スペースキー)
@@ -709,13 +710,10 @@ def main
           continuous_shift('s', 'ね'),
           continuous_shift('e', 'り'),
           continuous_shift(COMMA, 'む'),
-          #continuous_shift('t', ''),
-          #continuous_shift('y', ''),
           continuous_shift('u', 'さ'),
           continuous_shift('i', 'よ'),
           continuous_shift('p', 'え'),
           continuous_shift('r', 'め'),
-          #continuous_shift('a', ''),
           continuous_shift('w', 'み'),
           continuous_shift('d', 'に'),
           continuous_shift('f', 'ま'),
@@ -726,7 +724,8 @@ def main
           continuous_shift('l', 'つ'),
           continuous_shift(SEMICOLON, 'や'),
           continuous_shift('a', 'せ'),
-          #continuous_shift('x', 'ひ'),
+          #continuous_shift('z', ''),
+          #continuous_shift('x', ''),
           continuous_shift('c', 'を'),
           continuous_shift('v', '、'),
           continuous_shift('b', 'ぬ'),
@@ -734,8 +733,8 @@ def main
           continuous_shift('m', '。改'),
           continuous_shift('o', 'ゆ'),
           continuous_shift(PERIOD, 'ふ'),
-          continuous_shift('t', 'え'),
-          continuous_shift('y', 'へ'),
+          continuous_shift('t', 'え'),#Mac版のみの拡張
+          continuous_shift('y', 'へ'),#Mac版のみの拡張
           #continuous_shift('/', ''),
           # ------------------------------
           # シフトなし(単打)
