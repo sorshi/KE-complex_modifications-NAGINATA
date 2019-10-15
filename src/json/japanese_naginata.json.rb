@@ -530,6 +530,7 @@ def main
           three_keys(SPACEBAR,'v','k','ぃ'),
           three_keys(SPACEBAR,'v','l','ぅ'),
           three_keys(SPACEBAR,'v','p','ぇ'),
+          three_keys(SPACEBAR,'m','t','ぇ'),#Mac版のみの拡張
           three_keys(SPACEBAR,'v','n','ぉ'),
           three_keys(SPACEBAR,'v',SEMICOLON,'ゃ'),
           three_keys(SPACEBAR,'v','o','ゅ'),
