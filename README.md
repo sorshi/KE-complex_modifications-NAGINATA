@@ -88,7 +88,7 @@ Karabiner-ElementsのProfileで縦書きと横書きの2つのプロファイル
 
 - japanese_naginata.json.rbは[example_japanese_nicola.json.rb](https://github.com/pqrs-org/KE-complex_modifications/blob/master/src/json/example_japanese_nicola.json.rb)をベースに作成させていただきました。
 
-- Mac版独自の拡張としてオリジナルでは未アサインだと思いこんでいたセンターシフト+Tに「え」、センターシフト+Yに「へ」を割り当ててる機能を付けたら、作者の大岡さんに
+- Mac版独自の拡張としてオリジナルでは未アサインだと思いこんでいたセンターシフト+Tに「え」、センターシフト+Yに「へ」を割り当てる機能を付けたところ、作者の大岡さんに
 
   > センターシフトTYには、←→のシフト、つまり行選択（縦書きの場合）が入ってます。[【薙刀式】Mac版に改造アイデアが。: 大岡俊彦の作品置き場](http://oookaworks.seesaa.net/article/470898497.html)
 
