@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #
 # You can generate json by executing the following command on Terminal.
-# $ ruby ./japanese_naginata.json.rb > ../../docs/json/japanese_naginata.json
+# $ ruby ./japanese_naginata.json.rb v > ../../docs/json/japanese_naginata.json
 #
 # Horizontal Version
 # $ ruby ./japanese_naginata.json.rb h > ../../docs/json/japanese_naginata_h.json
@@ -26,6 +26,7 @@ require_relative '../lib/karabiner.rb'
 
 ########################################
 # キーコード(親指シフトと違ってそのまんまだから意味ないな…)
+# 横書き縦書きオプション
 if ARGV[0] == 'h' then
   #横書きキーアサイン
   LEFT_ARROW = 'down_arrow'.freeze
@@ -33,6 +34,13 @@ if ARGV[0] == 'h' then
   UP_ARROW = 'left_arrow'.freeze
   DOWN_ARROW = 'right_arrow'.freeze
   MODE = 'Horizontal'.freeze
+elsif ARGV[0] == 'v' then
+  #デフォルト(縦書き)キーアサイン
+  LEFT_ARROW = 'left_arrow'.freeze
+  RIGHT_ARROW = 'right_arrow'.freeze
+  UP_ARROW = 'up_arrow'.freeze
+  DOWN_ARROW = 'down_arrow'.freeze
+  MODE = 'Default(Vertical)'.freeze
 else
   #デフォルト(縦書き)キーアサイン
   LEFT_ARROW = 'left_arrow'.freeze
@@ -41,6 +49,19 @@ else
   DOWN_ARROW = 'down_arrow'.freeze
   MODE = 'Default(Vertical)'.freeze
 end
+# T/Yキーアサインオプション
+if ARGV[1] == 'm' then
+  #Mac版のみの拡張
+  TKEY = 'え'.freeze
+  YKEY = 'へ'.freeze
+  TYKEYMODE = ' T/Y Key Exchange '.freeze
+else
+  #オリジナル
+  TKEY = '選←'.freeze
+  YKEY = '選→'.freeze
+  TYKEYMODE = ' '.freeze
+end
+
 ALWAYS_LEFT_ARROW = 'left_arrow'.freeze
 ALWAYS_RIGHT_ARROW = 'right_arrow'.freeze
 ALWAYS_UP_ARROW = 'up_arrow'.freeze
@@ -155,6 +176,16 @@ def key_with_shift(key_code)
       'left_shift',
     ],
     'repeat' => false,
+  }
+end
+
+def key_with_repeat_shift(key_code)
+  {
+    'key_code' => key_code,
+    'modifiers' => [
+      'left_shift',
+    ],
+    'repeat' => true,
   }
 end
 
@@ -375,6 +406,8 @@ ROMAN_MAP = {
   '削' => [key_with_repeat(BACK_SPACE)],
   '→' => [key(RIGHT_ARROW)],
   '←' => [key(LEFT_ARROW)],
+  '選→' => [key_with_repeat_shift(RIGHT_ARROW)],
+  '選←' => [key_with_repeat_shift(LEFT_ARROW)],
   '改' => [key(ENTER)],
   '英' => [key(ENG)],
   '仮' => [key(JPN)],
@@ -455,7 +488,7 @@ def main
     'title' => 'Japanese NAGINATA STYLE (v11)',
     'rules' => [
       {
-        'description' => "Japanese NAGINATA STYLE (v11) #{MODE} Build #{now} ",
+        'description' => "Japanese NAGINATA STYLE (v11) #{MODE}#{TYKEYMODE}Build #{now} ",
         'manipulators' => [
           # 同時打鍵数の多いものから書く
           shiftkeydef(),#連続シフト用定義
@@ -576,6 +609,9 @@ def main
           three_keys(SPACEBAR, 'l','k','つぃ'),
           three_keys(SPACEBAR, 'l','p','つぇ'),
           three_keys(SPACEBAR, 'l','n','つぉ'),
+          #Mac版のみの拡張
+          three_keys('r','j','t','じぇ'),
+          three_keys('g','j','t','ぢぇ'),
           # ------------------------------
           # 2同時打鍵
           # 右手濁点
@@ -673,6 +709,11 @@ def main
           #Mac版のみの拡張
           two_keys('y','f','べ'),
           two_keys('y','v','ぺ'),
+          two_keys('q','t','ヴぇ'),
+          two_keys('l','t','うぇ'),
+          two_keys(PERIOD,'t','ふぇ'),
+          two_keys('r','t','しぇ'),
+          two_keys('g','t','ちぇ'),
           # ------------------------------
           # シフト(スペースキー)
           #shift_key('q', ''),
@@ -702,8 +743,8 @@ def main
           shift_key('m', '。改'),
           shift_key('o', 'ゆ'),
           shift_key(PERIOD, 'ふ'),
-          shift_key('t', 'え'),#Mac版のみの拡張
-          shift_key('y', 'へ'),#Mac版のみの拡張
+          shift_key('t', TKEY),
+          shift_key('y', YKEY),
           #shift_key('/', ''),
           # ------------------------------
           # 連続シフトシフト(スペースキー)
@@ -734,8 +775,8 @@ def main
           continuous_shift('m', '。改'),
           continuous_shift('o', 'ゆ'),
           continuous_shift(PERIOD, 'ふ'),
-          continuous_shift('t', 'え'),#Mac版のみの拡張
-          continuous_shift('y', 'へ'),#Mac版のみの拡張
+          continuous_shift('t', TKEY),
+          continuous_shift('y', YKEY),
           #continuous_shift('/', ''),
           # ------------------------------
           # シフトなし(単打)
