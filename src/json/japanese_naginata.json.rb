@@ -109,7 +109,7 @@ CONDITIONS = [
     {
       'input_mode_id' => 'com.apple.inputmethod.Japanese.FullWidthRoman',
     },
-  ]),
+  ])
 ].freeze
 
 # 連続シフト用
@@ -133,7 +133,12 @@ CONDITIONS_SHIFT = [
     'type' =>'variable_if',
     'name' => 'shifted',
     'value' =>  1
-  }
+  },
+  Karabiner.input_source_unless([
+    {
+      'input_mode_id' => 'com.apple.inputmethod.Japanese.FullWidthRoman',
+    },
+  ])
 ].freeze
 
 ########################################

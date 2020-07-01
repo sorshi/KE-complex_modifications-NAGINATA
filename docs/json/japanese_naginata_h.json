@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1593617235 ",
+      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1593618476 ",
       "manipulators": [
         {
           "type": "basic",
@@ -14029,6 +14029,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14075,6 +14083,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14121,6 +14137,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14167,6 +14191,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14213,6 +14245,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14255,6 +14295,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14301,6 +14349,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14347,6 +14403,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14393,6 +14457,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14439,6 +14511,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14485,6 +14565,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14531,6 +14619,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14577,6 +14673,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14623,6 +14727,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14669,6 +14781,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14715,6 +14835,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14761,6 +14889,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14807,6 +14943,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14849,6 +14993,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14895,6 +15047,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14937,6 +15097,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14983,6 +15151,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -15029,6 +15205,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -15075,6 +15259,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -15120,6 +15312,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -15165,6 +15365,14 @@
               "type": "variable_if",
               "name": "shifted",
               "value": 1
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
