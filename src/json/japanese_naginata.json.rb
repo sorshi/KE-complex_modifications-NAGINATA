@@ -105,6 +105,11 @@ CONDITIONS = [
     },
   ]),
   Karabiner.frontmost_application_unless(['loginwindow']),
+  Karabiner.input_source_unless([
+    {
+      'input_mode_id' => 'com.apple.inputmethod.Japanese.FullWidthRoman',
+    },
+  ]),
 ].freeze
 
 # 連続シフト用

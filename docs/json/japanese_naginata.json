@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1571205612 ",
+      "description": "Japanese NAGINATA STYLE (v11) Default(Vertical) Build 1593617227 ",
       "manipulators": [
         {
           "type": "basic",
@@ -62,6 +62,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -112,6 +120,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -161,6 +177,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -252,6 +276,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -303,6 +335,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -353,6 +393,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -400,6 +448,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -446,6 +502,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -577,6 +641,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -626,6 +698,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -677,6 +757,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -727,6 +815,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -776,6 +872,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -947,6 +1051,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -997,6 +1109,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1046,6 +1166,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1098,6 +1226,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1147,6 +1283,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1198,6 +1342,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1253,6 +1405,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1299,6 +1459,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1349,6 +1517,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1413,6 +1589,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1462,6 +1646,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1513,6 +1705,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1559,6 +1759,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1609,6 +1817,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1673,6 +1889,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1722,6 +1946,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1774,6 +2006,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -1824,6 +2064,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1878,6 +2126,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -1959,6 +2215,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2024,6 +2288,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2077,6 +2349,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2158,6 +2438,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2212,6 +2500,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2265,6 +2561,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2339,6 +2643,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2392,6 +2704,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2473,6 +2793,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2533,6 +2861,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2597,6 +2933,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2651,6 +2995,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2711,6 +3063,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2766,6 +3126,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -2816,6 +3184,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -2870,6 +3246,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3010,6 +3394,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3073,6 +3465,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3123,6 +3523,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3177,6 +3585,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3257,6 +3673,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3312,6 +3736,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3367,6 +3799,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3417,6 +3857,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3471,6 +3919,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3552,6 +4008,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3606,6 +4070,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3656,6 +4128,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3708,6 +4188,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3758,6 +4246,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3810,6 +4306,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3861,6 +4365,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -3911,6 +4423,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -3967,6 +4487,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4022,6 +4550,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4076,6 +4612,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4132,6 +4676,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4187,6 +4739,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4241,6 +4801,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4297,6 +4865,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4351,6 +4927,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4407,6 +4991,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4461,6 +5053,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4517,6 +5117,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4572,6 +5180,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4626,6 +5242,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4682,6 +5306,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4736,6 +5368,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4792,6 +5432,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -4846,6 +5494,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4901,6 +5557,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -4957,6 +5621,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5012,6 +5684,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5066,6 +5746,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5122,6 +5810,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5177,6 +5873,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5231,6 +5935,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5287,6 +5999,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5341,6 +6061,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5397,6 +6125,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5451,6 +6187,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5507,6 +6251,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5562,6 +6314,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5616,6 +6376,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5671,6 +6439,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5727,6 +6503,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5782,6 +6566,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5836,6 +6628,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -5892,6 +6692,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -5946,6 +6754,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6002,6 +6818,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6056,6 +6880,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6112,6 +6944,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6167,6 +7007,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6221,6 +7069,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6270,6 +7126,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6318,6 +7182,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6365,6 +7237,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6414,6 +7294,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6461,6 +7349,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6510,6 +7406,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6557,6 +7461,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6606,6 +7518,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6653,6 +7573,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6702,6 +7630,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6749,6 +7685,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6798,6 +7742,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6845,6 +7797,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6894,6 +7854,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -6941,6 +7909,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -6990,6 +7966,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7038,6 +8022,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7085,6 +8077,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7134,6 +8134,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7181,6 +8189,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7230,6 +8246,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7277,6 +8301,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7326,6 +8358,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7374,6 +8414,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7422,6 +8470,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7473,6 +8529,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7526,6 +8590,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7577,6 +8649,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7630,6 +8710,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7681,6 +8769,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7734,6 +8830,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7786,6 +8890,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7837,6 +8949,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7890,6 +9010,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -7941,6 +9069,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -7994,6 +9130,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8045,6 +9189,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8098,6 +9250,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8150,6 +9310,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8201,6 +9369,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8254,6 +9430,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8305,6 +9489,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8358,6 +9550,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8410,6 +9610,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8461,6 +9669,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8514,6 +9730,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8566,6 +9790,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8618,6 +9850,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8669,6 +9909,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8722,6 +9970,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8773,6 +10029,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -8826,6 +10090,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8878,6 +10150,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8930,6 +10210,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -8981,6 +10269,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9034,6 +10330,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9086,6 +10390,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9137,6 +10449,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9190,6 +10510,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9241,6 +10569,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9294,6 +10630,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9346,6 +10690,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9397,6 +10749,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9450,6 +10810,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9502,6 +10870,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9549,6 +10925,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9598,6 +10982,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9646,6 +11038,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9693,6 +11093,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9746,6 +11154,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9797,6 +11213,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -9850,6 +11274,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9902,6 +11334,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -9953,6 +11393,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10002,6 +11450,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10049,6 +11505,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10098,6 +11562,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10145,6 +11617,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10197,6 +11677,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10250,6 +11738,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10301,6 +11797,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10345,6 +11849,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10409,6 +11921,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10456,6 +11976,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10505,6 +12033,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10552,6 +12088,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10605,6 +12149,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10652,6 +12204,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -10705,6 +12265,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10757,6 +12325,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -10804,6 +12380,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -10861,6 +12445,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -10916,6 +12508,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -10973,6 +12573,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11029,6 +12637,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11080,6 +12696,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11137,6 +12761,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11192,6 +12824,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11249,6 +12889,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11304,6 +12952,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11361,6 +13017,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11416,6 +13080,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11473,6 +13145,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11528,6 +13208,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11585,6 +13273,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11640,6 +13336,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11697,6 +13401,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11753,6 +13465,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11804,6 +13524,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11861,6 +13589,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -11912,6 +13648,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -11969,6 +13713,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -12024,6 +13776,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -12081,6 +13841,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -12136,6 +13904,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ],
           "to_after_key_up": [
@@ -12190,6 +13966,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ],
@@ -13422,6 +15206,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13462,6 +15254,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13504,6 +15304,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13545,6 +15353,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13581,6 +15397,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13619,6 +15443,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13655,6 +15487,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13697,6 +15537,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13737,6 +15585,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13779,6 +15635,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13819,6 +15683,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13861,6 +15733,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13902,6 +15782,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -13942,6 +15830,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -13988,6 +15884,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14029,6 +15933,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14065,6 +15977,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14103,6 +16023,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14140,6 +16068,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14176,6 +16112,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14218,6 +16162,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14258,6 +16210,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14300,6 +16260,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14340,6 +16308,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14382,6 +16358,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14422,6 +16406,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14464,6 +16456,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14504,6 +16504,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14546,6 +16554,14 @@
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
               ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
             }
           ]
         },
@@ -14586,6 +16602,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
@@ -14639,6 +16663,14 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
               ]
             }
           ]
