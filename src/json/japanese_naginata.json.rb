@@ -410,6 +410,7 @@ ROMAN_MAP = {
   'りゅ' => [key('r'),key('y'),key('u')],
   'りぇ' => [key('r'),key('y'),key('e')],
   'りょ' => [key('r'),key('y'),key('o')],
+  'くぉ' => [key('k'),key('w'),key('o')],
   'ー' => [key(HYPHEN)],
   '、' => [key(COMMA)],
   '。' => [key(PERIOD)],
@@ -724,6 +725,7 @@ def main
           two_keys(PERIOD,'t','ふぇ'),
           two_keys('r','t','しぇ'),
           two_keys('g','t','ちぇ'),
+          two_keys('h','n','くぉ'),
           # ------------------------------
           # シフト(スペースキー)
           #shift_key('q', ''),

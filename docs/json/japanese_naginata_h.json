@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1593618476 ",
+      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1630766852 ",
       "manipulators": [
         {
           "type": "basic",
@@ -12299,6 +12299,66 @@
             },
             {
               "key_code": "e",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Hiragana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.Katakana"
+                },
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.HalfWidthKana"
+                }
+              ]
+            },
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.apple\\.loginwindow$"
+              ]
+            },
+            {
+              "type": "input_source_unless",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese.FullWidthRoman"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "h"
+              },
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "repeat": false
+            },
+            {
+              "key_code": "w",
+              "repeat": false
+            },
+            {
+              "key_code": "o",
               "repeat": false
             }
           ],
