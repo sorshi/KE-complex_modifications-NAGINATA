@@ -246,7 +246,7 @@ def start_unicodemode()
       'select_input_source' => {
         'input_source_id' => 'com.apple.keylayout.UnicodeHexInput',
       }
-  }
+   }
 end
 
 def shifted_on()
@@ -465,38 +465,34 @@ ROMAN_MAP = {
   '／改' => [key(SLASH),key(ENTER)],
   '：改' => [key(COLON),key(ENTER)],
   '・改' => [key_with_option(SLASH),key(ENTER)],
-  '○改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('7'),key(JPN)],
+  '○改' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('7'),key_with_shift(JPN),key(JPN)],
   '行頭空白改' => [key_with_control('a'),key(SPACEBAR),key(ENTER),key_with_control('e')],
-
   '【改' => [key_with_option('8'),key(ENTER)],
-  '〈改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('8'),key(JPN)],
+  '〈改' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('8'),key_with_shift(JPN),key(JPN)],
   '！改' => [key_with_shift('1'),key(ENTER)],
   '？改' => [key_with_shift(SLASH),key(ENTER)],
   '行頭空白三改' => [key_with_control('a'),key(SPACEBAR),key(SPACEBAR),key(SPACEBAR),key(ENTER),key_with_control('e')],
-
   '】改' => [key_with_option('9'),key(ENTER)],
-  '〉改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('9'),key(JPN)],
+  '〉改' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('9'),key_with_shift(JPN),key(JPN)],
   '……改' => [key_with_option(SEMICOLON),key_with_option(SEMICOLON),key(ENTER)],
   '──改' => [key_with_option_shift(HYPHEN),key_with_option_shift(HYPHEN),key(ENTER)],
   '三空白' => [key(SPACEBAR),key(SPACEBAR),key(SPACEBAR)],
-
   '」改改空' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(SPACEBAR)],
   '行頭削除' => [key_with_command_shift(UP_ARROW),key_with_repeat(BACK_SPACE)], #カーソル位置から行頭まで削除
   '確定復行' => [key(JPN),key(JPN)],#再変換と同一
   '縦棒改' => [key_with_shift(YEN),key(ENTER)],
-  'ルビ' => [key_with_shift(YEN),key(ENTER),key_with_control('e'),start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(JPN),start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(JPN),key(UP_ARROW)],
+  'ルビ1' => [key_with_shift(YEN),key(ENTER),key_with_control('e'),start_unicodemode()],
+  'ルビ2' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key_with_shift(JPN),key(JPN),key(UP_ARROW)],
   '」改「' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER),key(LEFT_CORNER_BRACKET),key(ENTER)],
   '「改' => [key(LEFT_CORNER_BRACKET),key(ENTER),],
   '『改' => [key_with_shift(LEFT_CORNER_BRACKET),key(ENTER)],
-  '《改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key(JPN)],
+  '《改' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('a'),key_with_shift(JPN),key(JPN)],
   '（改' => [key_with_shift('8'),key(ENTER)],
-
   '」改改' => [key(RIGHT_CORNER_BRACKET),key(ENTER),key(ENTER)],
   '」改' => [key(RIGHT_CORNER_BRACKET),key(ENTER)],
   '』改' => [key_with_shift(RIGHT_CORNER_BRACKET),key(ENTER)],
-  '》改' => [start_unicodemode(),key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key(JPN)],
+  '》改' => [key_with_option('3'),key_with_option('0'),key_with_option('0'),key_with_option('b'),key_with_shift(JPN),key(JPN)],
   '）改' => [key_with_shift('9'),key(ENTER)],
-
 }.freeze
 
 ROMAN_SIMULTANEOUS_MAP = {
@@ -575,16 +571,15 @@ def main
           editmode_two_left('q','／改'),
           editmode_two_left('w','：改'),
           editmode_two_left('e','・改'),
-          #editmode_two_left('r','○改'),
-          three_keys('m',COMMA,'r','○改'),
+          three_keys_unicode('m',COMMA,'r','○改'),
           editmode_two_left('t','行頭空白改'),
           editmode_two_left('a','【改'),
-          editmode_two_left('s','〈改'),
+          three_keys_unicode('m',COMMA,'s','〈改'),
           editmode_two_left('d','！改'),
           editmode_two_left('f','？改'),
           editmode_two_left('g','行頭空白三改'),
           editmode_two_left('z','】改'),
-          editmode_two_left('x','〉改'),
+          three_keys_unicode('m',COMMA,'x','〉改'),
           editmode_two_left('c','……改'),
           editmode_two_left('v','──改'),
           editmode_two_left('b','三空白'),
@@ -592,19 +587,16 @@ def main
           editmode_two_right('u','行頭削除'),
           editmode_two_right('i','確定復行'),#確定Undo
           editmode_two_right('o','縦棒改'),
-          # editmode_two_right('p','ルビ'),
-          three_keys('v','c','p','ルビ'),
+          three_keys_unicode_twostep('v','c','p','ルビ1','ルビ2'),
           editmode_two_right('h','」改「'),
           editmode_two_right('j','「改'),
           editmode_two_right('k','『改'),
-          # editmode_two_right('l','《改'),
-          three_keys('v','c','l','《改'),
+          three_keys_unicode('v','c','l','《改'),
           editmode_two_right(SEMICOLON,'（改'),
           editmode_two_right('n','」改改'),
           editmode_two_right('m','」改'),
           editmode_two_right(COMMA,'』改'),
-          # editmode_two_right(PERIOD,'》改'),
-          three_keys('v','c',PERIOD,'》改'),
+          three_keys_unicode('v','c',PERIOD,'》改'),
           editmode_two_right(SLASH,'）改'),
           # 3同時打鍵
           # 小書き： シフト半濁音同時押し
@@ -897,7 +889,7 @@ def shiftkeydef()
   }
 end
 
-def normal_key(key, char)
+def normal_key(key,char)
   {
     'type' => 'basic',
     'from' => {
@@ -908,7 +900,7 @@ def normal_key(key, char)
   }
 end
 
-def normal_key_always(key, char)
+def normal_key_always(key,char)
   {
     'type' => 'basic',
     'from' => {
@@ -922,7 +914,7 @@ def normal_key_always(key, char)
   }
 end
 
-def continuous_shift(key, char)
+def continuous_shift(key,char)
   {
     'type' => 'basic',
     'from' => {
@@ -933,7 +925,7 @@ def continuous_shift(key, char)
   }
 end
 
-def shift_key(key, char)
+def shift_key(key,char)
   {
     'type' => 'basic',
     'from' => {
@@ -957,7 +949,7 @@ def shift_key(key, char)
   }
 end
 
-def two_keys(key,key2, char)
+def two_keys(key,key2,char)
   {
     'type' => 'basic',
     'from' => {
@@ -975,7 +967,7 @@ def two_keys(key,key2, char)
   }
 end
 
-def two_keys_always(key,key2, char)
+def two_keys_always(key,key2,char)
   {
     'type' => 'basic',
     'from' => {
@@ -992,7 +984,7 @@ def two_keys_always(key,key2, char)
   }
 end
 
-def three_keys(key,key2,key3, char)
+def three_keys(key,key2,key3,char)
   {
     'type' => 'basic',
     'from' => {
@@ -1013,7 +1005,54 @@ def three_keys(key,key2,key3, char)
   }
 end
 
-def four_keys(key,key2,key3,key4, char)
+def three_keys_unicode_twostep(key,key2,key3, char1,char2)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => key,
+        },
+        {
+          'key_code' => key2,
+        },
+        {
+          'key_code' => key3,
+        },
+      ],
+    },
+    'to' => ROMAN_MAP[char1],
+    'to_delayed_action' => {'to_if_invoked' => ROMAN_MAP[char2]},
+    'parameters' => {'basic.to_delayed_action_delay_milliseconds' => 20},
+    'conditions' => CONDITIONS,
+  }
+end
+
+def three_keys_unicode(key,key2,key3,char)
+  {
+    'type' => 'basic',
+    'from' => {
+      'simultaneous' => [
+        {
+          'key_code' => key,
+        },
+        {
+          'key_code' => key2,
+        },
+        {
+          'key_code' => key3,
+        },
+      ],
+    },
+    'to' => start_unicodemode(),
+    'to_delayed_action' => {'to_if_invoked' => ROMAN_MAP[char]},
+    'parameters' => {'basic.to_delayed_action_delay_milliseconds' => 20},
+    'conditions' => CONDITIONS,
+  }
+end
+
+
+def four_keys(key,key2,key3,key4,char)
   {
     'type' => 'basic',
     'from' => {

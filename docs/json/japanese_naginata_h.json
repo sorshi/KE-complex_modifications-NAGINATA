@@ -2,7 +2,7 @@
   "title": "Japanese NAGINATA STYLE (v11)",
   "rules": [
     {
-      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1639253417 ",
+      "description": "Japanese NAGINATA STYLE (v11) Horizontal Build 1639304699 ",
       "manipulators": [
         {
           "type": "basic",
@@ -2153,45 +2153,57 @@
               }
             ]
           },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "7",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
+          "to": {
+            "select_input_source": {
+              "input_source_id": "com.apple.keylayout.UnicodeHexInput"
             }
-          ],
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "7",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
@@ -2376,45 +2388,57 @@
               }
             ]
           },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "8",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
+          "to": {
+            "select_input_source": {
+              "input_source_id": "com.apple.keylayout.UnicodeHexInput"
             }
-          ],
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "8",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
@@ -2731,45 +2755,57 @@
               }
             ]
           },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "9",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
+          "to": {
+            "select_input_source": {
+              "input_source_id": "com.apple.keylayout.UnicodeHexInput"
             }
-          ],
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "9",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
@@ -3296,81 +3332,86 @@
               "select_input_source": {
                 "input_source_id": "com.apple.keylayout.UnicodeHexInput"
               }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
-            },
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "b",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
-            },
-            {
-              "key_code": "left_arrow",
-              "repeat": false
             }
           ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "a",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "b",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              },
+              {
+                "key_code": "left_arrow",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
@@ -3612,45 +3653,57 @@
               }
             ]
           },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "a",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
+          "to": {
+            "select_input_source": {
+              "input_source_id": "com.apple.keylayout.UnicodeHexInput"
             }
-          ],
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "a",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
@@ -3946,45 +3999,57 @@
               }
             ]
           },
-          "to": [
-            {
-              "select_input_source": {
-                "input_source_id": "com.apple.keylayout.UnicodeHexInput"
-              }
-            },
-            {
-              "key_code": "3",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "0",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "b",
-              "modifiers": [
-                "left_alt"
-              ],
-              "repeat": false
-            },
-            {
-              "key_code": "lang1",
-              "repeat": false
+          "to": {
+            "select_input_source": {
+              "input_source_id": "com.apple.keylayout.UnicodeHexInput"
             }
-          ],
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "0",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "b",
+                "modifiers": [
+                  "left_alt"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "modifiers": [
+                  "left_shift"
+                ],
+                "repeat": false
+              },
+              {
+                "key_code": "lang1",
+                "repeat": false
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 20
+          },
           "conditions": [
             {
               "type": "input_source_if",
