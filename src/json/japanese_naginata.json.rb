@@ -249,6 +249,13 @@ def start_unicodemode()
   }
 end
 
+def shifted_on()
+  {
+    'set_variable' =>
+    {'name' => 'shifted','value' => 1}
+  }
+end
+
 ROMAN_MAP = {
   'あ' => [key('a')],
   'い' => [key('i')],
@@ -413,7 +420,7 @@ ROMAN_MAP = {
   'くぉ' => [key('k'),key('w'),key('o')],
   'ー' => [key(HYPHEN)],
   '、' => [key(COMMA)],
-  '。' => [key(PERIOD)],
+  # '。' => [key(PERIOD)],
   '削' => [key_with_repeat(BACK_SPACE)],
   '→' => [key(RIGHT_ARROW)],
   '←' => [key(LEFT_ARROW)],
@@ -491,6 +498,37 @@ ROMAN_MAP = {
   '）改' => [key_with_shift('9'),key(ENTER)],
 
 }.freeze
+
+ROMAN_SIMULTANEOUS_MAP = {
+  'え' => [shifted_on(), key('e')],
+  'お' => [shifted_on(), key('o')],
+  'さ' => [shifted_on(), key('s'), key('a')],
+  'せ' => [shifted_on(), key('s'), key('e')],
+  'ち' => [shifted_on(), key('t'), key('i')],
+  'つ' => [shifted_on(), key('t'), key('u')],
+  'に' => [shifted_on(), key('n'), key('i')],
+  'ぬ' => [shifted_on(), key('n'), key('u')],
+  'ね' => [shifted_on(), key('n'), key('e')],
+  'の' => [shifted_on(), key('n'), key('o')],
+  'ふ' => [shifted_on(), key('h'), key('u')],
+  'ま' => [shifted_on(), key('m'), key('a')],
+  'み' => [shifted_on(), key('m'), key('i')],
+  'む' => [shifted_on(), key('m'), key('u')],
+  'め' => [shifted_on(), key('m'), key('e')],
+  'も' => [shifted_on(), key('m'), key('o')],
+  'や' => [shifted_on(), key('y'), key('a')],
+  'ゆ' => [shifted_on(), key('y'), key('u')],
+  'よ' => [shifted_on(), key('y'), key('o')],
+  'り' => [shifted_on(), key('r'), key('i')],
+  'わ' => [shifted_on(), key('w'), key('a')],
+  'を' => [shifted_on(), key('w'), key('o')],
+  '、' => [shifted_on(), key(COMMA)],
+  '。' => [shifted_on(), key(PERIOD)],
+  '。改' => [shifted_on(), key(PERIOD),key(ENTER)],
+  '選→' => [shifted_on(), key_with_repeat_shift(RIGHT_ARROW)],
+  '選←' => [shifted_on(), key_with_repeat_shift(LEFT_ARROW)],
+}.freeze
+
 ########################################
 
 def main
@@ -831,7 +869,6 @@ def main
   )
 end
 
-
 def shiftkeydef()
   {
     'type' => 'basic',
@@ -908,18 +945,15 @@ def shift_key(key, char)
           'key_code' => SPACEBAR,
         },
       ],
-    },
-    'to' => ROMAN_MAP[char],
-    #'set_variable': { 'name': 'shifted','value': 1 },
-    'conditions' => CONDITIONS,
-    'to_after_key_up': [
-      {
-        'set_variable': {
-          'name': 'shifted',
-          'value': 0
-        }
+      'simultaneous_options' => {
+        'to_after_key_up' => [
+          'set_variable' =>
+          {'name' => 'shifted', 'value' => 0}
+        ]
       }
-    ]
+    },
+    'to' => ROMAN_SIMULTANEOUS_MAP[char],
+    'conditions' => CONDITIONS,
   }
 end
 
